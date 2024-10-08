@@ -1,0 +1,23 @@
+@import "./common/variable";
+@import "./common/reset";
+@import "./common/font";
+@import "./common/common";
+@import "./common/icon";
+
+@import "assets/scss/components/Button";
+@import "assets/scss/components/Sidebar";
+@import "assets/scss/components/Layout";
+@import "assets/scss/components/Popup";
+@import "assets/scss/components/Pagination";
+@import "assets/scss/components/Breadcrumb";
+
+// Pages---------------
+@import "assets/scss/components/Pages/Homepage";
+@import "assets/scss/components/Pages/About";
+@import "assets/scss/components/Pages/Services";
+@import "assets/scss/components/Pages/Portfolio";
+@import "assets/scss/components/Pages/Project";
+@import "assets/scss/components/Pages/Blog";
+@import "assets/scss/components/Pages/Contact";
+
+// @import "libs/swiper";

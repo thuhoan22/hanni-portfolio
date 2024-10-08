@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.2",
+    "@tanstack/react-query": "^5.28.14",
+    "@tanstack/react-query-devtools": "^5.28.14",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,10 +15,21 @@
     "@types/node": "^16.18.94",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
+    "classnames": "^2.5.1",
+    "highlight.js": "^11.9.0",
+    "json-server": "^0.17.0",
+    "marked": "^12.0.1",
+    "query-string": "^9.0.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.5",
     "react-dom": "^18.2.0",
+    "react-highlight": "^0.15.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
+    "sass": "^1.74.1",
+    "swiper": "^11.1.0",
     "typescript": "^4.9.5",
+    "use-debounce": "^10.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,5 +55,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@types/react-highlight": "^0.12.8",
+    "babel-loader": "^9.1.3"
   }
 }

@@ -1,0 +1,66 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 10px 40px;
+  border: 1px solid $primary;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Karla', sans-serif;
+  line-height: 32px;
+  transition: .2s ease-in-out;
+
+  @media #{$mobile} {
+    padding: 8px 36px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+    transition: ease 0.3s;
+    content: '';
+  }
+
+  &:hover {
+    &:before {
+      right: auto;
+      left: 0;
+      width: 100%;
+      content: '';
+    }
+  }
+
+  &-primary {
+    background: $primary;
+    color: $white;
+
+    &:before {
+      background-color: $white;
+    }
+    
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  &-secondary {
+    background: $white;
+    color: $secondary;
+
+    &:before {
+      background-color: $primary;
+    }
+    
+    &:hover {
+      color: $white;
+    }
+  }
+}
