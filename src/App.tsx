@@ -10,8 +10,8 @@ import Portfolio from "./pages/Portfolio";
 import Project from "./pages/Project";
 import ProjectDetail from "./pages/ProjectDetail";
 import Blog from "./pages/Blog";
-import BlogDetailOne from "./components/Pages/BlogDetail/BlogSwiperAndSlick";
-import BlogDetailTwo from "./components/Pages/BlogDetail/BlogGoogleSearchTips";
+import BlogSwiperAndSlick from "./components/Pages/BlogDetail/BlogSwiperAndSlick";
+import BlogGoogleSearchTips from "./components/Pages/BlogDetail/BlogGoogleSearchTips";
 import Contact from "./pages/Contact";
 import "./assets/scss/global.scss";
 
@@ -51,12 +51,12 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "/blog-detail/one",
-        element: <BlogDetailOne />,
+        path: "/blog-detail/1",
+        element: <BlogSwiperAndSlick />,
       },
       {
-        path: "/blog-detail/two",
-        element: <BlogDetailTwo />,
+        path: "/blog-detail/2",
+        element: <BlogGoogleSearchTips />,
       },
       {
         path: "/contact",

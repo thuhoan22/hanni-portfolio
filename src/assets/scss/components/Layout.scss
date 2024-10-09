@@ -4,12 +4,24 @@
   }
 
   .card {
-    &-thumb {
-      border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
 
+    &-thumb {
+      overflow: hidden;
+      position: relative;
+      padding-top: 115.2%;
+      border-radius: 4px;
+      
       img {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
+        border-radius: 4px;
         object-fit: cover;
+        transition: all 0.4s cubic-bezier(0, 0, 0.5, 1);
       }
     }
 
@@ -32,6 +44,14 @@
         font-weight: 600;
         color: $primary;
         line-height: 32px;
+      }
+    }
+
+    &:hover {
+      .card-thumb {
+        img {
+          transform: scale(1.06);
+        }
       }
     }
   }

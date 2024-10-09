@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const blogList = [
   {
     id: 1,
-    time: 'April 12, 2023',
+    time: 'Jul 22, 2023',
     title: 'How to use Swiper and Slick on the responsive web',
     url: '/blog-detail/1'
   },
@@ -11,35 +11,40 @@ const blogList = [
     id: 2,
     time: 'Oct 08, 2024',
     title: 'Google search tips for web developers',
-    url: '/blog-detail/two'
+    url: '/blog-detail/2'
   },
   {
     id: 3,
-    time: 'April 12, 2023',
+    time: 'Jan 01, 2023',
     title: 'Skills and tools for efficient web design',
-    url: '/blog-detail/two'
+    url: '/blog-detail/3'
   },
   {
     id: 4,
-    time: 'April 12, 2023',
-    title: 'How to use python for web scraping'
+    time: 'Dec 09, 2022',
+    title: 'How to use python for web scraping',
+    url: ''
   },
   {
     id: 5,
     time: 'April 12, 2023',
-    title: 'Best wireframe tools for web designers'
+    title: 'Best wireframe tools for web designers',
+    url: ''
   },
   {
     id: 6,
-    time: 'April 12, 2023',
-    title: 'Best wireframe tools for web designers'
+    time: 'May 25, 2022',
+    title: 'Learn about Hook in Reactjs',
+    url: ''
   }
 ]
 
 export default function Blog() {
+  let sortedList = blogList.sort((a, b) => new Date(b.time).getTime() - new Date(a.time).getTime());
+
   return (
     <ul className="blog-list">
-      {blogList.map((item, index) => (
+      {sortedList.map((item, index) => (
         <li className="blog-item" key={index}>
           <div className="item-time">
             <span className="icon-calendar"></span>

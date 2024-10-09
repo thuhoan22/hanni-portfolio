@@ -4,7 +4,7 @@
       "id": 1,
       "thumb": "http://localhost:3000/images/img-project-01.jpg",
       "name": "Photogram",
-      "website": "photogram.co",
+      "website": "photogram.com",
       "category": "Archive",
       "client": "Nang Studio",
       "date": "Nov 10, 2024",
@@ -36,7 +36,7 @@
       "id": 3,
       "thumb": "http://localhost:3000/images/img-project-03.jpg",
       "name": "Interior Design Ltd.",
-      "website": "th.house.des",
+      "website": "https://thuhoan22.github.io/Animation/Interior-landing/",
       "client": "TH House",
       "category": "Modalbox",
       "date": "July 08, 2024",
@@ -52,7 +52,7 @@
       "id": 4,
       "thumb": "http://localhost:3000/images/img-project-04.jpg",
       "name": "Jadoo",
-      "website": "jado.travel.vn",
+      "website": "https://thuhoan22.github.io/landing-jadoo/homepage.html",
       "client": "Viet Travel",
       "category": "Travel",
       "date": "Dec 26, 2023",
@@ -67,8 +67,8 @@
     {
       "id": 5,
       "thumb": "http://localhost:3000/images/img-project-05.jpg",
-      "name": "NTF Landing",
-      "website": "ntf.g",
+      "name": "NFTHub",
+      "website": "https://thuhoan22.github.io/Animation/NFTHub/",
       "client": "",
       "category": "NTF",
       "date": "Apr 26, 2024",
@@ -113,9 +113,9 @@
     {
       "id": 9,
       "thumb": "http://localhost:3000/images/img-project-09.jpg",
-      "name": "Food & Beverage",
+      "name": "MeTime",
       "client": "",
-      "category": "F&B",
+      "category": "Mobile, App",
       "date": "Jan 05, 2024",
       "desc": ""
     },
@@ -127,7 +127,6 @@
       "category": "Movie",
       "date": "Jun 14, 2021",
       "desc": ""
-
     },
     {
       "id": 11,
@@ -155,6 +154,15 @@
       "client": "",
       "category": "Event",
       "date": "Nov 10, 2024",
+      "desc": ""
+    },
+    {
+      "id": 14,
+      "thumb": "http://localhost:3000/images/img-project-14.jpg",
+      "name": "Food & Beverage",
+      "client": "",
+      "category": "F&B",
+      "date": "Jan 05, 2024",
       "desc": ""
     }
   ],
@@ -199,6 +207,44 @@
       "name": "Lion Mark",
       "position": "Freelancer Developer",
       "review": "Based on innovative research and development that delivers the best and the first products to the clients as well as good take care and cutting-edge technology."
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "How to use Swiper and Slick on the responsive web",
+      "time": "Jul 22, 2023",
+      "url": "/blog-detail/1"
+    },
+    {
+      "id": 2,
+      "title": "Google search tips for web developers",
+      "time": "Oct 08, 2024",
+      "url": "/blog-detail/2"
+    },
+    {
+      "id": 3,
+      "title": "Skills and tools for efficient web design",
+      "time": "Jan 01, 2023",
+      "url": "/blog-detail/3"
+    },
+    {
+      "id": 4,
+      "title": "How to use python for web scraping",
+      "time": "Dec 09, 2022",
+      "url": ""
+    },
+    {
+      "id": 5,
+      "title": "Best wireframe tools for web designers",
+      "time": "April 12, 2023",
+      "url": ""
+    },
+    {
+      "id": 1,
+      "title": "Learn about Hook in Reactjs",
+      "time": "May 25, 2022",
+      "url": ""
     }
   ]
 }

@@ -51,19 +51,20 @@ export default function CustomerClient() {
                 className="swiper-client"
               >
                 {isSuccess && data.length > 0 &&
-                data.map((item: ClientProps) => {
-                  return (
-                    <SwiperSlide key={item.id}>
-                      <Client
-                        id={item.id}
-                        review={item.review}
-                        avt={item.avt}
-                        name={item.name}
-                        position={item.position}
-                      />
-                    </SwiperSlide>
-                  );
-                })}
+                  data.map((item: ClientProps) => {
+                    return (
+                      <SwiperSlide key={item.id}>
+                        <Client
+                          id={item.id}
+                          review={item.review}
+                          avt={item.avt}
+                          name={item.name}
+                          position={item.position}
+                        />
+                      </SwiperSlide>
+                    );
+                  }
+                )}
               </Swiper>
             </div>
           </div>
