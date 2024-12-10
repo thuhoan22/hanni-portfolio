@@ -203,6 +203,15 @@
     font-size: 30px;
     font-weight: 500;
     color: $primary;
+
+    &-image {
+      width: 34px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   .btn-menu {

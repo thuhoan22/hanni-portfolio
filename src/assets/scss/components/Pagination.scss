@@ -19,6 +19,28 @@
     text-align: center;
     transition: .2s ease-in-out;
 
+    &-latest,
+    &-oldest {
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        background: url("../../img/svg/icon-double-arrow.svg") no-repeat;
+        background-size: 100% auto;
+        transform: translate(-50%, -50%);
+        content: '';
+      }
+
+      &:hover,
+      &.is-active {
+        &:after {
+          background: url("../../img/svg/icon-double-arrow-white.svg") no-repeat;
+        }
+      }
+    }
+
     &-prev,
     &-next {
       &:after {
@@ -27,7 +49,7 @@
         left: 50%;
         width: 18px;
         height: 18px;
-        background: url("../../img/svg/icon-nav-arrow-left.svg") no-repeat;
+        background: url("../../img/svg/icon-arrow-left.svg") no-repeat;
         background-size: 100% auto;
         transform: translate(-50%, -50%);
         content: '';
@@ -41,7 +63,8 @@
       }
     }
 
-    &-next {
+    &-next,
+    &-oldest  {
       &:after {
         transform: translate(-50%, -50%) rotate(180deg);
       }

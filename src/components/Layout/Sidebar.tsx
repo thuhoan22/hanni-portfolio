@@ -7,6 +7,7 @@ import IconFacebook from "assets/img/svg/icon-facebook.svg";
 import IconInstagram from "assets/img/svg/icon-instagram.svg";
 import IconLinkedin from "assets/img/svg/icon-linkedin.svg";
 import IconGithub from "assets/img/svg/icon-github.svg";
+import LogoMO from "assets/img/logo-mo.svg";
 
 export default function SideBar() {
   const width = useWindowSize();
@@ -118,8 +119,9 @@ export default function SideBar() {
           )}
           {width <= 1024 && (
             <>
-              <NavLink to={"/"} className="logo">
-                <span>HN.</span>
+              <NavLink to={"/"} className="logo logo-image">
+                {/* <span>HN.</span> */}
+                <img src={LogoMO} alt="Hanni Nguyen" />
               </NavLink>
               <button
                 type="button"

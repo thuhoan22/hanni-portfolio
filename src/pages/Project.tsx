@@ -11,14 +11,6 @@ const limit = 9;
 export interface SelectType {
   _limit?: number;
   _page?: number;
-  _sort?: string;
-  _order?: "sale" | "asc" | "desc";
-  sale_ne?: number;
-  type?: string[];
-  price_gte?: number | undefined;
-  price_lte?: number | undefined;
-  designer?: string[];
-  name_like?: any;
 }
 
 export default function Project() {
@@ -84,12 +76,13 @@ export default function Project() {
                   );
                 })}
             </ul>
-            <Pagination
+            <Pagination limit={5} totalItem={100} />
+            {/* <Pagination
               params={params}
               setParams={setParams}
               upperPageBound={limit}
               totalItem={totalItem}
-            />
+            /> */}
           </div>
         </div>
       </section>
