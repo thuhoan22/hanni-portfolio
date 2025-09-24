@@ -1,115 +1,86 @@
-// import { SelectType } from "pages/Project";
-import { useLayoutEffect, useState } from "react";
-
-// interface PaginationProps {
-//   totalItem: number;
-//   upperPageBound: number;
-//   params: SelectType;
-//   setParams: React.Dispatch<React.SetStateAction<SelectType>>;
-// }
+import { useEffect, useState } from "react";
 
 export interface PaginationProps {
   totalItem: number;
   limit: number;
   currentPage?: number;
-  stepPage?: number;
+  stepPage?: number; // số trang hiển thị trong 1 nhóm
   onPageChange?: (page: number) => void;
 }
 
-export default function Pagination(props: PaginationProps) {
-  // const { totalItem, upperPageBound, params, setParams } = props;
-  // const [current, setCurrent] = useState<number>(Number(params._page));
-  // const totalPages = Math.ceil(totalItem / upperPageBound);
-  // const handlePrev = () => {
-  //   setCurrent(current - 1);
-  // };
-  // const handleNext = () => {
-  //   setCurrent(current + 1);
-  // };
+export default function Pagination({
+  totalItem,
+  limit,
+  currentPage: propPage = 1,
+  stepPage = 10,
+  onPageChange,
+}: PaginationProps) {
+  const totalPage = Math.max(1, Math.ceil(totalItem / limit));
+  const [currentPage, setCurrentPage] = useState(propPage);
 
-  // const handleSelectPage = (page: number) => {
-  //   setCurrent(page);
-  // };
-
-  // useEffect(() => {
-  //   setCurrent(Number(params._page));
-  // }, [params._page]);
-
-  // useEffect(() => {
-  //   setParams((prev) => ({ ...prev, _page: current }));
-  // }, [current, setParams]);
-
-  // ============================
-
-  const { totalItem, limit, onPageChange, stepPage } = props;
-  const [currentPage, setCurrentPage] = useState(props.currentPage ?? 1);
-  const [lengthArray, setLengthArray] = useState(0);
-  const STEP_PAGE = stepPage ?? 10;
-
-  const totalPage = Math.ceil(totalItem / limit);
-  const groupPage = Math.ceil(totalPage / STEP_PAGE);
+  // Đồng bộ khi props.currentPage thay đổi từ bên ngoài
+  useEffect(() => {
+    setCurrentPage(propPage);
+  }, [propPage]);
 
   const handleChangePage = (page: number) => {
-    if (onPageChange) onPageChange(page);
+    if (page < 1 || page > totalPage) return;
     setCurrentPage(page);
+    onPageChange?.(page);
   };
 
-  useLayoutEffect(() => {
-    if (Math.floor(totalPage / STEP_PAGE) > 0) {
-      if (groupPage > Math.ceil(currentPage / STEP_PAGE) || groupPage === totalPage / STEP_PAGE) {
-        setLengthArray(STEP_PAGE);
-      } else {
-        setLengthArray(totalPage % STEP_PAGE);
-      }
-    } else {
-      setLengthArray(totalPage % STEP_PAGE);
-    }
-  }, [currentPage, totalPage, groupPage, STEP_PAGE]);
+  // Tính nhóm trang hiện tại
+  const currentGroup = Math.floor((currentPage - 1) / stepPage);
+  const startPage = currentGroup * stepPage + 1;
+  const endPage = Math.min(startPage + stepPage - 1, totalPage);
+  const visiblePages = Array.from({ length: endPage - startPage + 1 }, (_, i) => startPage + i);
 
   return (
     <div className="pagination">
-      {totalPage > 0 && (
+      {totalPage > 1 && (
         <div className="pagination-box">
           <button
             type="button"
             className="pagination-btn pagination-btn-latest"
             onClick={() => handleChangePage(1)}
             disabled={currentPage === 1}
-          ></button>
+          >
+          </button>
+
           <button
             type="button"
             className="pagination-btn pagination-btn-prev"
             onClick={() => handleChangePage(currentPage - 1)}
             disabled={currentPage === 1}
-          ></button>
-          {Array(lengthArray)
-            .fill(0)
-            .map((_item, index) => {
-              const pageNumber = index + 1 + STEP_PAGE * (Math.ceil(currentPage / STEP_PAGE) - 1);
-              const className = currentPage === pageNumber ? 'pagination-btn is-active' : 'pagination-btn';
-              return (
-                <button 
-                  type="button" 
-                  className={className} 
-                  onClick={() => handleChangePage(pageNumber)}
-                  key={pageNumber}
-                >
-                  {pageNumber}
-                </button>
-              );
-            })}
+          >
+          </button>
+
+          {visiblePages.map((page) => (
+            <button
+              key={page}
+              type="button"
+              className={`pagination-btn ${currentPage === page ? "is-active" : ""}`}
+              onClick={() => handleChangePage(page)}
+            >
+              {page}
+            </button>
+          ))}
+
           <button
             type="button"
             className="pagination-btn pagination-btn-next"
             onClick={() => handleChangePage(currentPage + 1)}
             disabled={currentPage === totalPage}
-          ></button>
+          >
+          </button>
+
           <button
             type="button"
             className="pagination-btn pagination-btn-oldest"
             onClick={() => handleChangePage(totalPage)}
             disabled={currentPage === totalPage}
-          ></button>
+          >
+          </button>
         </div>
       )}
     </div>

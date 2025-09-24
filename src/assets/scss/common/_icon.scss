@@ -68,7 +68,7 @@
 		height: 48px;
 		background-image: url(../../img/icon-bulb.svg);
 
-		@media #{$mobile} {
+		@include respond-below($screen-sm) {
 			left: auto;
 			right: 0;
 		}
@@ -82,7 +82,7 @@
 		background-image: url(../../img/icon-folder.svg);
 		transform: translateX(-50%);
 
-		@media #{$mobile} {
+		@include respond-below($screen-sm) {
 			left: 0;
 			transform: translateX(0);
 		}

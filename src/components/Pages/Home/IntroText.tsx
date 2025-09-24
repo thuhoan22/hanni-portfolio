@@ -5,10 +5,17 @@ export default function IntroText() {
   const informationQuery = useQuery({
     queryKey: ["dataContact"],
     queryFn: () =>
-      fetch(`http://localhost:5000/contact`).then((res) =>
+      fetch(`http://localhost:5000/profile`).then((res) =>
         res.json()
       ),
   });
+
+  let experienceYears = null;
+  if (informationQuery.isSuccess) {
+    const startYear = parseInt(informationQuery.data[0].start, 10);
+    const currentYear = new Date().getFullYear();
+    experienceYears = currentYear - startYear;
+  }
 
   return (
     <div className="intro-text">
@@ -18,7 +25,7 @@ export default function IntroText() {
         based in Hanoi
       </h2>
       <p className="text-desc">
-        I have <em className="text-highlight">~6 years</em> of experience in the
+        I have <em className="text-highlight">~{experienceYears ?? "…"} years</em> of experience in the
         position of Front-End Developer and I'm very passionate and dedicated to
         my work.
       </p>

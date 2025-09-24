@@ -2,18 +2,30 @@
 	font-family: 'Inter', 'Karla', sans-serif;
 }
 
-@media #{$inner} {}
-
 .wrap {
 	display: flex;
 
-	@media #{$inner} {
+	@include respond-below($screen-lg) {
 		display: block;
 	}
 }
 
 .main-content {
 	flex: 1;
+	padding-left: 340px;
+
+	.inner {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+		padding: 0 50px;
+
+		@include breakpoint(tablet) {
+			max-width: 100%;
+		}
+		@include breakpoint(mobile) {}
+  }
 
 	.contact {
 		&-item {
@@ -32,7 +44,7 @@
 				line-height: 32px;
 				transition: color .2s ease-in-out;
 
-				@media #{$mobile} {
+				@include respond-below($screen-sm) {
 					font-size: 16px;
 					line-height: 30px;
 				}
@@ -108,7 +120,12 @@
 		line-height: 32px;
 		text-transform: uppercase;
 
-		@media #{$mobile} {
+		@include respond-between($screen-md, $screen-lg) {
+			font-size: 17px;
+			line-height: 30px;
+		}
+
+		@include respond-below($screen-sm) {
 			font-size: 16px;
 			line-height: 28px;
 		}
@@ -121,13 +138,13 @@
 		color: $primary;
 		line-height: 52px;
 
-		@media #{$tablet} {
+		@include respond-below($screen-md) {
 			margin-top: 5px;
 			font-size: 30px;
 			line-height: 42px;
 		}
 
-		@media #{$mobile} {
+		@include respond-below($screen-sm) {
 			font-size: 26px;
 			line-height: 38px;
 		}

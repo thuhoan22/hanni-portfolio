@@ -1,3 +1,9 @@
+$screen-xsm: 360px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1366px;
+$screen-xlg: 1920px;
+
 $primary: #130f49;
 $secondary: #55527c;
 $dark: #000;
@@ -5,7 +11,3 @@ $white: #fff;
 $yellow: #ff972d;
 $purple: #5D3BEE;
 $highlight-color: #a5a6ff;
-
-$inner: 'screen and (max-width: 1280px)';
-$tablet: 'screen and (max-width: 1024px)';
-$mobile: 'screen and (max-width: 768px)';

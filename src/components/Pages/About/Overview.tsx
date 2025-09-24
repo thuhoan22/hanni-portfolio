@@ -7,7 +7,7 @@ export default function Overview() {
   const overviewQuery = useQuery({
     queryKey: ["dataContact"],
     queryFn: () =>
-      fetch(`http://localhost:5000/contact`).then((res) =>
+      fetch(`http://localhost:5000/profile`).then((res) =>
         res.json()
       ),
   });
@@ -25,6 +25,14 @@ export default function Overview() {
     }
     return age;
   }
+
+  const getExperienceYears = () => {
+    const startYear = overviewQuery.data?.[0]?.start;
+    if (!startYear) return null;
+
+    const currentYear = new Date().getFullYear();
+    return currentYear - parseInt(startYear, 10);
+  };
 
   return (
     <section className="section overview">
@@ -48,7 +56,7 @@ export default function Overview() {
                   and mobile devices.
                 </p>
                 <p className="text">
-                  With ~6 years of experience, I have acquired the skills and
+                  With ~{getExperienceYears()} years of experience, I have acquired the skills and
                   knowledge necessary to make a project a success. I enjoy every
                   step of the process, from discussion and collaboration.
                 </p>

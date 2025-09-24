@@ -20,10 +20,12 @@ export default function SideBar() {
   const snsQuery = useQuery({
     queryKey: ["dataContact"],
     queryFn: () =>
-      fetch(`http://localhost:5000/contact`).then((res) =>
+      fetch(`http://localhost:5000/profile`).then((res) =>
         res.json()
       ),
   });
+
+  const closeMenu = () => setIsOpen(false);
   
   useEffect(() => {
     if (isOpen) {
@@ -136,32 +138,32 @@ export default function SideBar() {
               <div className={`sidebar-mobile ${isOpen ? "is-open" : ""}`}>
                 <ul className="nav-list">
                   <li className="nav-item">
-                    <NavLink to={"/"} className="item-link">
+                    <NavLink to={"/"} className="item-link" onClick={closeMenu}>
                       Home
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={"/about"} className="item-link">
+                    <NavLink to={"/about"} className="item-link" onClick={closeMenu}>
                       About
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={"/services"} className="item-link">
+                    <NavLink to={"/services"} className="item-link" onClick={closeMenu}>
                       Services
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={"/portfolio"} className="item-link">
+                    <NavLink to={"/portfolio"} className="item-link" onClick={closeMenu}>
                       Portfolio
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={"/blog"} className="item-link">
+                    <NavLink to={"/blog"} className="item-link" onClick={closeMenu}>
                       Blog
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={"/contact"} className="item-link">
+                    <NavLink to={"/contact"} className="item-link" onClick={closeMenu}>
                       Contact
                     </NavLink>
                   </li>

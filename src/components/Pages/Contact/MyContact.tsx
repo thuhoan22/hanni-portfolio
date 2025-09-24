@@ -6,7 +6,7 @@ export default function MyContact() {
   const contactQuery = useQuery({
     queryKey: ["dataContact"],
     queryFn: () =>
-      fetch(`http://localhost:5000/contact`).then((res) =>
+      fetch(`http://localhost:5000/profile`).then((res) =>
         res.json()
       ),
   });

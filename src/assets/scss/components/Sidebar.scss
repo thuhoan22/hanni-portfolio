@@ -7,7 +7,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 370px;
+  width: 340px;
   height: 100vh;
   padding: 60px 0;
   border-right: 1px solid rgba($color: $secondary, $alpha: 0.1);
@@ -17,11 +17,11 @@
     width: 300px;
   }
 
-  @media #{$inner} {
+  @include respond-below($screen-lg) {
     width: 280px;
   }
 
-  @media #{$tablet} {
+  @include respond-below($screen-md) {
     align-items: flex-start;
     justify-content: center;
     z-index: 10;
@@ -32,7 +32,7 @@
     box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
   }
 
-  @media #{$mobile} {
+  @include respond-below($screen-sm) {
     height: 60px;
     padding: 0 20px;
   }
@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media #{$tablet} {
+    @include respond-below($screen-md) {
       display: none;
     }
 
@@ -88,7 +88,7 @@
         line-height: 32px;
         transition: .2s ease-in-out;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           position: relative;
           color: $white;
 
@@ -109,7 +109,7 @@
         &:hover {
           color: $highlight-color;
 
-          @media #{$tablet} {
+          @include respond-below($screen-md) {
             color: $white;
 
             &:after {
@@ -139,7 +139,7 @@
       transition: transform .4s ease-in-out;
       transform: translateX(100%);
 
-      @media #{$mobile} {
+      @include respond-below($screen-sm) {
         max-width: 100%;
       }
 
@@ -154,7 +154,7 @@
         align-items: center;
         justify-content: center;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           display: none;
         }
 
@@ -192,7 +192,7 @@
         line-height: 32px;
         text-align: center;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           color: $white;
         }
       }
@@ -215,7 +215,7 @@
   }
 
   .btn-menu {
-    @media #{$tablet} {
+    @include respond-below($screen-md) {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -276,7 +276,7 @@
       }
     }
 
-    @media #{$mobile} {
+    @include respond-below($screen-sm) {
       top: 18px;
     }
   }
@@ -294,7 +294,7 @@
       width: 300px;
     }
 
-    @media #{$inner} {
+    @include respond-below($screen-lg) {
       display: none;
     }
   }

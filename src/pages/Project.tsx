@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import queryString from "query-string";
@@ -22,25 +22,26 @@ export default function Project() {
 
   const [params, setParams] = useState<SelectType>(
     JSON.stringify(defaultParams) !== "{}"
-      ? defaultParams
-      : {
-        _limit: limit,
-        _page: 1,
-      }
+      ? {
+          _limit: Number(defaultParams._limit) || limit,
+          _page: Number(defaultParams._page) || 1,
+        }
+      : { _limit: limit, _page: 1 }
   );
 
   const getData = () => {
     return fetch(
       `http://localhost:5000/card?` + queryString.stringify(params)
     ).then((res) => {
-      setTotalItem(Number(res.headers.get("x-total-count")));
+      setTotalItem(Number(res.headers.get("x-total-count") || 0));
       return res.json();
     });
   };
-  const debouncedMax = useDebounce(params, 500);
-  const {data, isSuccess } = useQuery({
-    queryKey: ["newData", debouncedMax],
-    queryFn: getData
+  const [debouncedParams] = useDebounce(params, 300);
+  const { data, isSuccess } = useQuery({
+    queryKey: ["newData", debouncedParams],
+    queryFn: getData,
+    placeholderData: keepPreviousData
   });
 
   useEffect(() => {
@@ -76,13 +77,15 @@ export default function Project() {
                   );
                 })}
             </ul>
-            <Pagination limit={5} totalItem={100} />
-            {/* <Pagination
-              params={params}
-              setParams={setParams}
-              upperPageBound={limit}
+            <Pagination
               totalItem={totalItem}
-            /> */}
+              limit={params._limit ?? limit}
+              stepPage={5}
+              currentPage={params._page ?? 1}
+              onPageChange={(page) =>
+                setParams((prev) => ({ ...prev, _page: page }))
+              }
+            />
           </div>
         </div>
       </section>

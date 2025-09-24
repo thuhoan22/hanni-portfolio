@@ -9,9 +9,16 @@
   font-weight: 400;
   font-family: 'Karla', sans-serif;
   line-height: 32px;
+  text-align: center;
   transition: .2s ease-in-out;
 
-  @media #{$mobile} {
+  @include respond-below($screen-lg) {
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @include respond-below($screen-sm) {
     padding: 8px 36px;
     font-size: 16px;
     line-height: 30px;

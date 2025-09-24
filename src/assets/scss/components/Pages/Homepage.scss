@@ -1,43 +1,22 @@
 .main-content {
   height: 100vh;
-  padding-left: 370px;
 
   @media (max-width: 1600px) {
     padding-left: 300px;
   }
 
-  @media #{$inner} {
+  @include respond-below($screen-lg) {
     padding-left: 280px;
   }
 
-  @media #{$tablet} {
+  @include respond-below($screen-md) {
     position: relative;
     height: auto;
     padding: 120px 50px;
   }
 
-  @media #{$mobile} {
+  @include respond-below($screen-sm) {
     padding: 60px 20px;
-  }
-
-  .inner {
-    width: 100%;
-    max-width: 1210px;
-    height: 100%;
-    margin: 0 auto;
-
-    @media (max-width: 1600px) {
-      max-width: 1000px;
-      padding: 0 20px;
-    }
-
-    @media #{$inner} {
-      max-width: 800px;
-    }
-
-    @media #{$tablet} {
-      max-width: 100%;
-    }
   }
 
   .intro {
@@ -46,7 +25,7 @@
     justify-content: space-between;
     height: 100%;
 
-    @media #{$tablet} {
+    @include respond-below($screen-md) {
       flex-direction: column;
       margin-top: 40px;
     }
@@ -54,7 +33,7 @@
     &-text {
       width: 50%;
 
-      @media #{$tablet} {
+      @include respond-below($screen-md) {
         order: 2;
         width: 100%;
         margin-top: 50px;
@@ -65,20 +44,20 @@
           font-size: 60px;
           font-weight: 800;
           color: $primary;
-          line-height: 92px;
+          line-height: 80px;
           text-transform: capitalize;
 
           @media (max-width: 1600px) {
-            font-size: 48px;
-            line-height: 64px;
+            font-size: 44px;
+            line-height: 58px;
           }
 
-          @media #{$inner} {
-            font-size: 38px;
-            line-height: 52px;
+          @include respond-below($screen-lg) {
+            font-size: 34px;
+            line-height: 48px;
           }
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             font-size: 32px;
             line-height: 42px;
           }
@@ -92,7 +71,7 @@
           color: $secondary;
           line-height: 32px;
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             font-size: 16px;
             line-height: 30px;
           }
@@ -105,11 +84,14 @@
 
       .btn-group {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 40px;
+        gap: 15px;
 
         .btn {
-          &+.btn {
-            margin-left: 16px;
+          min-width: 200px;
+          @include respond-below($screen-lg) {
+            min-width: 150px;
           }
         }
       }
@@ -117,28 +99,33 @@
       .contact {
         margin-top: 160px;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           margin-top: 70px;
         }
       }
     }
 
     &-image {
+      flex: 1;
       order: 1;
-      width: calc(50% - 120px);
       margin-left: 120px;
 
-      @media #{$tablet} {
+      @include respond-below($screen-lg) {
+        margin-left: 80px;
+      }
+
+      @include respond-below($screen-md) {
         width: 70%;
         margin-left: 0;
       }
 
-      @media #{$mobile} {
+      @include respond-below($screen-sm) {
         width: 100%;
       }
 
       img {
         width: 100%;
+        border-radius: 8px;
         object-fit: cover;
       }
     }
@@ -159,11 +146,11 @@
         left: 300px;
       }
 
-      @media #{$inner} {
+      @include respond-below($screen-lg) {
         left: 280px;
       }
 
-      @media #{$tablet} {
+      @include respond-below($screen-md) {
         left: 0;
       }
     }
@@ -180,11 +167,11 @@
         left: 300px;
       }
 
-      @media #{$inner} {
+      @include respond-below($screen-lg) {
         left: 280px;
       }
 
-      @media #{$mobile} {
+      @include respond-below($screen-sm) {
         left: 0;
       }
     }
@@ -192,7 +179,7 @@
     .icon-semicircle-outline {
       display: block;
 
-      @media #{$mobile} {
+      @include respond-below($screen-sm) {
         display: none;
       }
     }

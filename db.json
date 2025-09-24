@@ -166,7 +166,7 @@
       "desc": ""
     }
   ],
-  "contact": [
+  "profile": [
     {
       "id": 1,
       "name": "Hanni Nguyen",
@@ -178,6 +178,7 @@
       "degree": "The Degree Of Engineer Computer Science",
       "education": "Hanoi University Of Industry (HaUI) / 2014 - 2018",
       "major": "Computer Science ",
+      "start": "2018",
       "image": "http://localhost:3000/images/img-introduce.png",
       "avt": "http://localhost:3000/images/img-avt.png",
       "facebook": "https://www.facebook.com/hoan.thu.22",

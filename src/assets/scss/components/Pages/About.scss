@@ -1,19 +1,17 @@
 .about-page {
-  @media #{$tablet} {
+  @include respond-below($screen-md) {
     padding: 0;
   }
-
-  @media #{$mobile} {}
 
   .section {
     &.overview {
       padding: 130px 0 90px;
 
-      @media #{$tablet} {
+      @include respond-below($screen-md) {
         padding: 130px 50px 90px;
       }
 
-      @media #{$mobile} {
+      @include respond-below($screen-sm) {
         padding: 80px 20px 60px;
       }
     }
@@ -24,14 +22,18 @@
       display: flex;
       justify-content: space-between;
 
-      @media #{$tablet} {
+      @include respond-between($screen-md, $screen-lg) {
+        flex-wrap: wrap;
+      }
+
+      @include respond-below($screen-md) {
         flex-direction: column;
       }
 
       &-left {
         width: 33.33%;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           width: 100%;
         }
 
@@ -44,7 +46,7 @@
           color: $primary;
           line-height: 32px;
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             font-size: 18px;
           }
         }
@@ -52,7 +54,7 @@
         .btn {
           margin-top: 44px;
 
-          @media #{$tablet} {
+          @include respond-below($screen-md) {
             margin-top: 30px;
           }
         }
@@ -61,7 +63,7 @@
       &-right {
         flex: 1;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           margin-top: 50px;
         }
 
@@ -72,7 +74,12 @@
           color: $secondary;
           line-height: 32px;
 
-          @media #{$mobile} {
+          @include respond-between($screen-md, $screen-lg) {
+            font-size: 17px;
+            line-height: 30px;
+          }
+
+          @include respond-below($screen-sm) {
             font-size: 16px;
             line-height: 30px;
           }
@@ -91,7 +98,7 @@
           align-items: center;
           margin-top: 44px;
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             margin-top: 30px;
           }
         }
@@ -107,6 +114,11 @@
             color: $secondary;
             line-height: 32px;
             text-align: center;
+
+            @include respond-between($screen-md, $screen-lg) {
+              font-size: 17px;
+              line-height: 30px;
+            }
 
             &:before {
               position: absolute;
@@ -132,11 +144,16 @@
 
           .value {
             padding-top: 22px;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 600;
             color: $primary;
-            line-height: 32px;
+            line-height: 30px;
             text-align: center;
+            @include respond-between($screen-md, $screen-lg) {
+              padding-top: 16px;
+              font-size: 15px;
+              line-height: 28px;
+            }
           }
 
           .link {
@@ -148,7 +165,7 @@
             }
           }
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             display: flex;
             
             tr {
@@ -180,7 +197,7 @@
     &-basic {
       margin-top: 102px;
 
-      @media #{$tablet} {
+      @include respond-below($screen-md) {
         margin-top: 50px;
       }
 
@@ -191,7 +208,7 @@
         flex-wrap: wrap;
         margin: 0 -25px -25px;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           justify-content: flex-start;
         }
       }
@@ -206,11 +223,11 @@
         text-align: center;
         transition: .2s ease-in-out;
 
-        @media #{$tablet} {
+        @include respond-below($screen-md) {
           width: calc(50% - 50px);
         }
 
-        @media #{$mobile} {
+        @include respond-below($screen-sm) {
           width: 100%;
         }
 
@@ -255,7 +272,7 @@
           color: $primary;
           line-height: 52px;
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             font-size: 30px;
             line-height: 42px;
           }
@@ -271,7 +288,7 @@
           line-height: 32px;
           text-transform: uppercase;
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             margin-top: 8px;
             font-size: 16px;
             line-height: 28px;
@@ -290,12 +307,12 @@
   .education-experience {
     background-color: #F3F9FF;
 
-    @media #{$tablet} {
+    @include respond-below($screen-md) {
       padding-left: 50px;
       padding-right: 50px;
     }
 
-    @media #{$mobile} {
+    @include respond-below($screen-sm) {
       padding: 60px 20px;
     }
   }
@@ -313,7 +330,7 @@
         line-height: 32px;
         text-transform: uppercase;
 
-        @media #{$mobile} {
+        @include respond-below($screen-sm) {
           font-size: 15px;
           line-height: 26px;
         }
@@ -329,7 +346,7 @@
         line-height: 30px;
         text-transform: capitalize;
 
-        @media #{$mobile} {
+        @include respond-below($screen-sm) {
           font-size: 14px;
           line-height: 22px;
         }
@@ -372,7 +389,7 @@
   .experience {
     margin-top: 100px;
 
-    @media #{$mobile} {
+    @include respond-below($screen-sm) {
       margin-top: 60px;
     }
 
@@ -389,7 +406,7 @@
       margin: 20px;
       box-sizing: border-box;
 
-      @media #{$mobile} {
+      @include respond-below($screen-sm) {
         width: 100%;
         min-height: auto;
       }
@@ -405,11 +422,11 @@
           box-shadow: 30px 40px 80px 0px #E4EDF5;
           text-align: left;
 
-          @media #{$tablet} {
+          @include respond-below($screen-md) {
             padding: 30px 40px;
           }
 
-          @media #{$mobile} {
+          @include respond-below($screen-sm) {
             padding: 20px 30px;
           }
 
@@ -419,11 +436,11 @@
             color: $primary;
             line-height: 26px;
 
-            @media #{$tablet} {
+            @include respond-below($screen-md) {
               font-size: 18px;
             }
 
-            @media #{$mobile} {
+            @include respond-below($screen-sm) {
               font-size: 16px;
               line-height: 22px;
             }
@@ -437,12 +454,12 @@
               color: $yellow;
               line-height: 32px;
 
-              @media #{$tablet} {
+              @include respond-below($screen-md) {
                 font-size: 16px;
                 line-height: 30px;
               }
 
-              @media #{$mobile} {
+              @include respond-below($screen-sm) {
                 font-size: 14px;
                 line-height: 22px;
               }
@@ -456,13 +473,13 @@
             color: $secondary;
             line-height: 32px;
 
-            @media #{$tablet} {
+            @include respond-below($screen-md) {
               margin-top: 5px;
               font-size: 16px;
               line-height: 30px;
             }
 
-            @media #{$mobile} {
+            @include respond-below($screen-sm) {
               margin-top: 8px;
               font-size: 14px;
               line-height: 22px;
@@ -481,12 +498,12 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
 
-            @media #{$tablet} {
+            @include respond-below($screen-md) {
               font-size: 16px;
               line-height: 30px;
             }
 
-            @media #{$mobile} {
+            @include respond-below($screen-sm) {
               font-size: 14px;
               line-height: 28px;
             }
@@ -501,7 +518,7 @@
           display: flex;
           justify-content: space-between;
 
-          @media #{$tablet} {
+          @include respond-below($screen-md) {
             flex-direction: column;
           }
         }
@@ -515,7 +532,7 @@
     .content-box {
       margin-top: 50px;
 
-      @media #{$mobile} {
+      @include respond-below($screen-sm) {
         margin-top: 40px;
       }
     }
