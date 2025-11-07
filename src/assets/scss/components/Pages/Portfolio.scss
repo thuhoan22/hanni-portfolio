@@ -75,6 +75,11 @@
         font-weight: 800;
         color: $primary;
         line-height: 52px;
+
+        @include respond-below($screen-lg) {
+          font-size: 36px;
+          line-height: 50px;
+        }
       }
     }
 
@@ -89,6 +94,11 @@
         color: $secondary;
         line-height: 34px;
         text-align: center;
+
+        @include respond-below($screen-lg) {
+          font-size: 17px;
+          line-height: 28px;
+        }
       }
 
       .personal-info {
@@ -119,6 +129,11 @@
           color: $primary;
           line-height: 30px;
           text-align: center;
+
+          @include respond-below($screen-lg) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
       }
 

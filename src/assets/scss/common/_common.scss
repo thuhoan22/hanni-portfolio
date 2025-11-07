@@ -138,6 +138,11 @@
 		color: $primary;
 		line-height: 52px;
 
+		@include respond-below($screen-lg) {
+			font-size: 34px;
+			line-height: 46px;
+		}
+
 		@include respond-below($screen-md) {
 			margin-top: 5px;
 			font-size: 30px;

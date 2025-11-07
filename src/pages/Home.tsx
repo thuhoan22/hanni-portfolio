@@ -7,8 +7,10 @@ export default function Home() {
     <div className="main-content home-page">
       <div className="inner">
         <div className="intro">
-          <IntroText />
-          <IntroImage />
+          {/* <div className="intro-box"> */}
+            <IntroText />
+            <IntroImage />
+          {/* </div> */}
         </div>
       </div>
       <IconDecorContent />

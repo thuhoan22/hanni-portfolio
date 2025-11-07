@@ -63,10 +63,10 @@ export default function Overview() {
                 <div className="info-basic">
                   <table className="table-info">
                     <colgroup>
-                      <col style={{ width: "16%" }} />
-                      <col style={{ width: "28%" }} />
-                      <col style={{ width: "28%" }} />
-                      <col style={{ width: "28%" }} />
+                      <col style={{ width: "9%" }} />
+                      <col style={{ width: "32%" }} />
+                      <col style={{ width: "33%" }} />
+                      <col style={{ width: "26%" }} />
                     </colgroup>
                     <thead>
                       {width > 768 && (

@@ -2,7 +2,7 @@
   "card": [
     {
       "id": 1,
-      "thumb": "http://localhost:3000/images/img-project-01.jpg",
+      "thumb": "/images/img-project-01.jpg",
       "name": "Photogram",
       "website": "photogram.com",
       "category": "Archive",
@@ -11,14 +11,14 @@
       "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "desc3": "",
-      "imgage1": "http://localhost:3000/images/img-detail-05.jpg",
-      "imgage2": "http://localhost:3000/images/img-detail-06.jpg",
-      "imgage3": "http://localhost:3000/images/img-detail-07.jpg",
-      "imgage4": "http://localhost:3000/images/img-detail-08.jpg"
+      "imgage1": "/images/img-detail-05.jpg",
+      "imgage2": "/images/img-detail-06.jpg",
+      "imgage3": "/images/img-detail-07.jpg",
+      "imgage4": "/images/img-detail-08.jpg"
     },
     {
       "id": 2,
-      "thumb": "http://localhost:3000/images/img-project-02.jpg",
+      "thumb": "/images/img-project-02.jpg",
       "name": "Restaurant",
       "website": "spaghettibox.food",
       "client": "Spaghettibox",
@@ -27,14 +27,14 @@
       "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "desc3": "",
-      "imgage1": "http://localhost:3000/images/img-detail-09.jpg",
-      "imgage2": "http://localhost:3000/images/img-detail-10.jpg",
-      "imgage3": "http://localhost:3000/images/img-detail-11.jpg",
-      "imgage4": "http://localhost:3000/images/img-detail-12.jpg"
+      "imgage1": "/images/img-detail-09.jpg",
+      "imgage2": "/images/img-detail-10.jpg",
+      "imgage3": "/images/img-detail-11.jpg",
+      "imgage4": "/images/img-detail-12.jpg"
     },
     {
       "id": 3,
-      "thumb": "http://localhost:3000/images/img-project-03.jpg",
+      "thumb": "/images/img-project-03.jpg",
       "name": "Interior Design Ltd.",
       "website": "https://thuhoan22.github.io/Animation/Interior-landing/",
       "client": "TH House",
@@ -43,14 +43,14 @@
       "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "desc3": "",
-      "imgage1": "http://localhost:3000/images/img-detail-13.jpg",
-      "imgage2": "http://localhost:3000/images/img-detail-14.jpg",
-      "imgage3": "http://localhost:3000/images/img-detail-15.jpg",
-      "imgage4": "http://localhost:3000/images/img-detail-16.jpg"
+      "imgage1": "/images/img-detail-13.jpg",
+      "imgage2": "/images/img-detail-14.jpg",
+      "imgage3": "/images/img-detail-15.jpg",
+      "imgage4": "/images/img-detail-16.jpg"
     },
     {
       "id": 4,
-      "thumb": "http://localhost:3000/images/img-project-04.jpg",
+      "thumb": "/images/img-project-04.jpg",
       "name": "Jadoo",
       "website": "https://thuhoan22.github.io/landing-jadoo/homepage.html",
       "client": "Viet Travel",
@@ -59,14 +59,14 @@
       "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "desc3": "",
-      "imgage1": "http://localhost:3000/images/img-detail-17.jpg",
-      "imgage2": "http://localhost:3000/images/img-detail-18.jpg",
-      "imgage3": "http://localhost:3000/images/img-detail-19.jpg",
-      "imgage4": "http://localhost:3000/images/img-detail-20.jpg"
+      "imgage1": "/images/img-detail-17.jpg",
+      "imgage2": "/images/img-detail-18.jpg",
+      "imgage3": "/images/img-detail-19.jpg",
+      "imgage4": "/images/img-detail-20.jpg"
     },
     {
       "id": 5,
-      "thumb": "http://localhost:3000/images/img-project-05.jpg",
+      "thumb": "/images/img-project-05.jpg",
       "name": "NFTHub",
       "website": "https://thuhoan22.github.io/Animation/NFTHub/",
       "client": "",
@@ -76,7 +76,7 @@
     },
     {
       "id": 6,
-      "thumb": "http://localhost:3000/images/img-project-06.jpg",
+      "thumb": "/images/img-project-06.jpg",
       "name": "Cheo Beo Studio",
       "website": "cheobeo.studio.vn",
       "client": "Cheo Beo Studio",
@@ -85,14 +85,14 @@
       "desc1": "Cheo Beo brings the most complete products, good materials, fashionable and carries many meanings. Cheo Beo website is designed to bring comfort to users, accessing product information at first sight.",
       "desc2": "Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they phase when they will represent the target product. Building mockups strikes the ideal balance ease of modification.",
       "desc3": "",
-      "imgage1": "http://localhost:3000/images/img-detail-01.jpg",
-      "imgage2": "http://localhost:3000/images/img-detail-02.jpg",
-      "imgage3": "http://localhost:3000/images/img-detail-03.jpg",
-      "imgage4": "http://localhost:3000/images/img-detail-04.jpg"
+      "imgage1": "/images/img-detail-01.jpg",
+      "imgage2": "/images/img-detail-02.jpg",
+      "imgage3": "/images/img-detail-03.jpg",
+      "imgage4": "/images/img-detail-04.jpg"
     },
     {
       "id": 7,
-      "thumb": "http://localhost:3000/images/img-project-07.jpg",
+      "thumb": "/images/img-project-07.jpg",
       "name": "Hyundai",
       "website": "hyundai.ko",
       "client": "",
@@ -102,7 +102,7 @@
     },
     {
       "id": 8,
-      "thumb": "http://localhost:3000/images/img-project-08.jpg",
+      "thumb": "/images/img-project-08.jpg",
       "name": "Kia",
       "website": "https://cpo.kia.com/",
       "client": "",
@@ -112,7 +112,7 @@
     },
     {
       "id": 9,
-      "thumb": "http://localhost:3000/images/img-project-09.jpg",
+      "thumb": "/images/img-project-09.jpg",
       "name": "MeTime",
       "client": "",
       "category": "Mobile, App",
@@ -121,7 +121,7 @@
     },
     {
       "id": 10,
-      "thumb": "http://localhost:3000/images/img-project-10.jpg",
+      "thumb": "/images/img-project-10.jpg",
       "name": "Netflix",
       "client": "",
       "category": "Movie",
@@ -130,7 +130,7 @@
     },
     {
       "id": 11,
-      "thumb": "http://localhost:3000/images/img-project-11.jpg",
+      "thumb": "/images/img-project-11.jpg",
       "name": "Laneige",
       "website": "https://www.apgroup.com/int/ko/",
       "client": "Amore Pacific",
@@ -140,7 +140,7 @@
     },
     {
       "id": 12,
-      "thumb": "http://localhost:3000/images/img-project-12.jpg",
+      "thumb": "/images/img-project-12.jpg",
       "name": "Neauthy",
       "client": "",
       "category": "Cosmetic",
@@ -149,7 +149,7 @@
     },
     {
       "id": 13,
-      "thumb": "http://localhost:3000/images/img-project-13.jpg",
+      "thumb": "/images/img-project-13.jpg",
       "name": "Wedding invitation",
       "client": "",
       "category": "Event",
@@ -158,7 +158,7 @@
     },
     {
       "id": 14,
-      "thumb": "http://localhost:3000/images/img-project-14.jpg",
+      "thumb": "/images/img-project-14.jpg",
       "name": "Food & Beverage",
       "client": "",
       "category": "F&B",
@@ -173,14 +173,14 @@
       "dob": "10/11/1996",
       "phone": "+84 989 698 482",
       "email": "hannin.dev@gmail.com",
-      "address": "Cau Giay, Ha Noi",
+      "address": "Hanoi, Vietnam",
       "job": "Front-end Developer",
       "degree": "The Degree Of Engineer Computer Science",
       "education": "Hanoi University Of Industry (HaUI) / 2014 - 2018",
       "major": "Computer Science ",
       "start": "2018",
-      "image": "http://localhost:3000/images/img-introduce.png",
-      "avt": "http://localhost:3000/images/img-avt.png",
+      "image": "/images/img-introduce.png",
+      "avt": "/images/logo.png",
       "facebook": "https://www.facebook.com/hoan.thu.22",
       "instagram": "https://www.instagram.com/hoan_cb/",
       "linkedin": "https://www.linkedin.com/in/hanni-nguyen/",
@@ -190,21 +190,21 @@
   "client": [
     {
       "id": 1,
-      "avt": "http://localhost:3000/images/img-avt-client-01.png",
+      "avt": "/images/img-avt-client-01.png",
       "name": "Go Eun Kim",
       "position": "Senior Designer at Behance",
       "review": "Really the Code Quality, Customer Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends."
     },
     {
       "id": 2,
-      "avt": "http://localhost:3000/images/img-avt-client-02.png",
+      "avt": "/images/img-avt-client-02.png",
       "name": "Hyunbum Koo",
       "position": "Director at NC Foundation",
       "review": "With a vision to promote perfectiony with a more systematic and sustainable approach. They focus on creating qualitative values for a better project."
     },
     {
       "id": 3,
-      "avt": "http://localhost:3000/images/img-avt-client-03.png",
+      "avt": "/images/img-avt-client-03.png",
       "name": "Lion Mark",
       "position": "Freelancer Developer",
       "review": "Based on innovative research and development that delivers the best and the first products to the clients as well as good take care and cutting-edge technology."

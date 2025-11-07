@@ -1,6 +1,9 @@
 .main-content {
   .section {
     padding: 100px 0;
+    @include respond-below($screen-lg) {
+      padding: 30px 0;
+    }
   }
 
   .card {
@@ -35,6 +38,11 @@
         color: $secondary;
         line-height: 32px;
         text-transform: uppercase;
+
+        @include respond-below($screen-lg) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
 
       .name {
@@ -44,6 +52,10 @@
         font-weight: 600;
         color: $primary;
         line-height: 32px;
+
+        @include respond-below($screen-lg) {
+          font-size: 21px;
+        }
       }
     }
 

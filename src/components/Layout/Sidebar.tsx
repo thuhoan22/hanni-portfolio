@@ -53,7 +53,7 @@ export default function SideBar() {
             <span className="author-avtar">
               <img src={`${snsQuery.data[0].avt}`} alt="" />
             </span>
-            <h1 className="author-name">{snsQuery.data[0].name}</h1>
+            {/* <h1 className="author-name">{snsQuery.data[0].name}</h1> */}
           </div>
           {width > 1024 && (
             <>
@@ -121,10 +121,10 @@ export default function SideBar() {
           )}
           {width <= 1024 && (
             <>
-              <NavLink to={"/"} className="logo logo-image">
+              {/* <NavLink to={"/"} className="logo logo-image"> */}
                 {/* <span>HN.</span> */}
-                <img src={LogoMO} alt="Hanni Nguyen" />
-              </NavLink>
+                {/* <img src={LogoMO} alt="Hanni Nguyen" /> */}
+              {/* </NavLink> */}
               <button
                 type="button"
                 className={`btn-menu ${isOpen ? "is-open" : "is-close"}`}

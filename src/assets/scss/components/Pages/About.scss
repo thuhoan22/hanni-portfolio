@@ -21,6 +21,7 @@
     &-info {
       display: flex;
       justify-content: space-between;
+      gap: 20px;
 
       @include respond-between($screen-md, $screen-lg) {
         flex-wrap: wrap;
@@ -116,7 +117,7 @@
             text-align: center;
 
             @include respond-between($screen-md, $screen-lg) {
-              font-size: 17px;
+              font-size: 16px;
               line-height: 30px;
             }
 
@@ -143,16 +144,16 @@
           }
 
           .value {
-            padding-top: 22px;
+            padding: 22px 5px 0;
             font-size: 17px;
             font-weight: 600;
             color: $primary;
             line-height: 30px;
             text-align: center;
             @include respond-between($screen-md, $screen-lg) {
-              padding-top: 16px;
+              padding-top: 14px;
               font-size: 15px;
-              line-height: 28px;
+              line-height: 20px;
             }
           }
 
@@ -223,6 +224,10 @@
         text-align: center;
         transition: .2s ease-in-out;
 
+        @include respond-below($screen-lg) {
+          padding: 30px 12px;
+        }
+
         @include respond-below($screen-md) {
           width: calc(50% - 50px);
         }
@@ -272,6 +277,10 @@
           color: $primary;
           line-height: 52px;
 
+          @include respond-below($screen-lg) {
+            font-size: 35px;
+          }
+
           @include respond-below($screen-sm) {
             font-size: 30px;
             line-height: 42px;
@@ -288,9 +297,9 @@
           line-height: 32px;
           text-transform: uppercase;
 
-          @include respond-below($screen-sm) {
+          @include respond-below($screen-lg) {
             margin-top: 8px;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 28px;
           }
         }
@@ -415,19 +424,15 @@
         &-item {
           display: block;
           height: 100%;
-          padding: 45px 50px;
+          padding: 40px 32px;
           border-radius: 4px;
           background: $white;
           transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
           box-shadow: 30px 40px 80px 0px #E4EDF5;
           text-align: left;
 
-          @include respond-below($screen-md) {
-            padding: 30px 40px;
-          }
-
-          @include respond-below($screen-sm) {
-            padding: 20px 30px;
+          @include respond-below($screen-lg) {
+            padding: 20px 25px;
           }
 
           .text-position {
@@ -436,7 +441,7 @@
             color: $primary;
             line-height: 26px;
 
-            @include respond-below($screen-md) {
+            @include respond-below($screen-lg) {
               font-size: 18px;
             }
 
@@ -454,7 +459,7 @@
               color: $yellow;
               line-height: 32px;
 
-              @include respond-below($screen-md) {
+              @include respond-below($screen-lg) {
                 font-size: 16px;
                 line-height: 30px;
               }
@@ -467,20 +472,15 @@
           }
 
           .text-name {
-            margin-left: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
             font-size: 18px;
             font-weight: 500;
             color: $secondary;
             line-height: 32px;
 
-            @include respond-below($screen-md) {
-              margin-top: 5px;
-              font-size: 16px;
-              line-height: 30px;
-            }
-
-            @include respond-below($screen-sm) {
-              margin-top: 8px;
+            @include respond-below($screen-lg) {
               font-size: 14px;
               line-height: 22px;
             }
@@ -498,14 +498,13 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
 
-            @include respond-below($screen-md) {
+            @include respond-below($screen-lg) {
               font-size: 16px;
-              line-height: 30px;
+              line-height: 28px;
             }
 
             @include respond-below($screen-sm) {
               font-size: 14px;
-              line-height: 28px;
             }
           }
 
@@ -517,6 +516,7 @@
         &-top {
           display: flex;
           justify-content: space-between;
+          gap: 15px;
 
           @include respond-below($screen-md) {
             flex-direction: column;

@@ -33,12 +33,17 @@ export default function RecentProject({ limit }: RecentProjectProps) {
         <div className="section-content">
           <div className="slider">
             <Swiper
-            navigation={true}
-            modules={[Navigation]}
-            slidesPerView={3}
-            spaceBetween={32}
-            effect="fade"
-            className="swiper-project"
+              className="swiper-project"
+              navigation={true}
+              modules={[Navigation]}
+              slidesPerView={3}
+              spaceBetween={32}
+              effect="fade"
+              breakpoints={{
+                1200: {
+                  slidesPerView: 3,
+                },
+              }}
             >
               {isSuccess && data.length > 0 &&
                 data.map((item: CardProps) => {

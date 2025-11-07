@@ -1,16 +1,28 @@
 .contact-page {
   .section {
-    background-color: #E9F9FF;
-
     &-head {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 120px;
+      gap: 160px;
+
+      @include respond-below($screen-lg) {
+        gap: 80px;
+      }
+
+      @include respond-below($screen-sm) {
+        gap: 50px;
+        flex-direction: column;
+        margin-bottom: 80px;
+      }
 
       &-left {
-        width: calc(60% - 160px);
-        margin-right: 160px;
+        width: 46%;
+
+        @include respond-below($screen-sm) {
+          width: 100%;
+        }
 
         .text-desc {
           margin-top: 32px;
@@ -30,6 +42,10 @@
         display: flex;
         flex: 1;
         flex-direction: column;
+
+        @include respond-below($screen-sm) {
+          width: 100%;
+        }
       }
 
       .input-item {
@@ -55,6 +71,12 @@
 
       .btn-submit {
         max-width: 200px;
+      }
+    }
+
+    &-content {
+      img {
+        width: 100%;
       }
     }
   }

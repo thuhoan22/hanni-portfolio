@@ -61,7 +61,10 @@ export default function Experience() {
                   <span className="time">{item.timeWorking}</span>
                   {item.position}
                 </strong>
-                <span className="text-name">- {item.companyName}</span>
+                <span className="text-name">
+                  <span>-</span>
+                  <span>{item.companyName}</span>
+                </span>
               </div>
               <div className="card-content">
                 <p className="text-detail">{item.content}</p>
