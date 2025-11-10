@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { BASE_URL } from 'config';
 
 export default function ProjectDetail() {
   const params = useParams();
@@ -7,7 +8,7 @@ export default function ProjectDetail() {
   const projectDetailQuery = useQuery({
     queryKey: ["getDetail", params.id],
     queryFn: () =>
-      fetch(`http://localhost:5000/card/${params.id}`).then((res) =>
+      fetch(`${BASE_URL}/card/${params.id}`).then((res) =>
         res.json()
       ),
   });
@@ -49,20 +50,28 @@ export default function ProjectDetail() {
                     <p className="text">{projectDetailQuery.data.desc2}</p>
                   </div>
                   <div className="info-other">
-                    <dl>
-                      <dt>Client</dt>
-                      <dd>{projectDetailQuery.data.client}</dd>
-                      <dt>Category</dt>
-                      <dd>{projectDetailQuery.data.category}</dd>
-                      <dt>Date</dt>
-                      <dd>{projectDetailQuery.data.date}</dd>
-                      <dt>Share</dt>
-                      <dd className="share-sns">
-                        <Link to={""} className="btn-icon btn-facebook"></Link>
-                        <Link to={""} className="btn-icon btn-instagram"></Link>
-                        <Link to={""} className="btn-icon btn-linkedin"></Link>
-                      </dd>
-                    </dl>
+                    <ul className="info-other-list">
+                      <li className="info-other-item">
+                        <span className="key">Client</span>
+                        <span className="value">{projectDetailQuery.data.client}</span>
+                      </li>
+                      <li className="info-other-item">
+                        <span className="key">Category</span>
+                        <span className="value">{projectDetailQuery.data.category}</span>
+                      </li>
+                      <li className="info-other-item">
+                        <span className="key">Date</span>
+                        <span className="value">{projectDetailQuery.data.date}</span>
+                      </li>
+                      <li className="info-other-item">
+                        <span className="key">Share</span>
+                        <div className="value share-sns">
+                          <Link to={""} className="btn-icon btn-facebook"></Link>
+                          <Link to={""} className="btn-icon btn-instagram"></Link>
+                          <Link to={""} className="btn-icon btn-linkedin"></Link>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div className="img-box">

@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useWindowSize } from "hook/useWindowSize";
+import { BASE_URL } from 'config';
 import IconDecorSidebar from "components/IconDecorSidebar";
 import IconFacebook from "assets/img/svg/icon-facebook.svg";
 import IconInstagram from "assets/img/svg/icon-instagram.svg";
 import IconLinkedin from "assets/img/svg/icon-linkedin.svg";
 import IconGithub from "assets/img/svg/icon-github.svg";
-import LogoMO from "assets/img/logo-mo.svg";
 
 export default function SideBar() {
   const width = useWindowSize();
@@ -20,7 +20,7 @@ export default function SideBar() {
   const snsQuery = useQuery({
     queryKey: ["dataContact"],
     queryFn: () =>
-      fetch(`http://localhost:5000/profile`).then((res) =>
+      fetch(`${BASE_URL}/profile`).then((res) =>
         res.json()
       ),
   });
@@ -121,10 +121,6 @@ export default function SideBar() {
           )}
           {width <= 1024 && (
             <>
-              {/* <NavLink to={"/"} className="logo logo-image"> */}
-                {/* <span>HN.</span> */}
-                {/* <img src={LogoMO} alt="Hanni Nguyen" /> */}
-              {/* </NavLink> */}
               <button
                 type="button"
                 className={`btn-menu ${isOpen ? "is-open" : "is-close"}`}

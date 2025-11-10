@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { BASE_URL } from 'config';
 import Customer from "components/Customer";
 import Client, { ClientProps } from "components/Client";
 
@@ -12,7 +13,7 @@ export default function CustomerClient() {
   const { data, isSuccess } = useQuery({
     queryKey: ["dataClient"],
     queryFn: () =>
-      fetch(`http://localhost:5000/client`).then((res) =>
+      fetch(`${BASE_URL}/client`).then((res) =>
         res.json()
       ),
   });

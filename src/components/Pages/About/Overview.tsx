@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useWindowSize } from "hook/useWindowSize";
+import { BASE_URL } from 'config';
 
 export default function Overview() {
   const width = useWindowSize();
+  
   const overviewQuery = useQuery({
     queryKey: ["dataContact"],
     queryFn: () =>
-      fetch(`http://localhost:5000/profile`).then((res) =>
+      fetch(`${BASE_URL}/profile`).then((res) =>
         res.json()
       ),
-  });
+
+    });
+    console.log('BASE_URL',`${BASE_URL}/profile`);
 
   const dob = "1996/11/10"
   const getAge = () => {

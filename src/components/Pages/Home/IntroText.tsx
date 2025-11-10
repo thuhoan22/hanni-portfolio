@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { BASE_URL } from 'config';
 
 export default function IntroText() {
   const informationQuery = useQuery({
     queryKey: ["dataContact"],
     queryFn: () =>
-      fetch(`http://localhost:5000/profile`).then((res) =>
+      fetch(`${BASE_URL}/profile`).then((res) =>
         res.json()
       ),
   });

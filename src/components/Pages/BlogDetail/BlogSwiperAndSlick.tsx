@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { BASE_URL } from 'config';
 import Highlight from 'react-highlight';
 import 'highlight.js/styles/atom-one-light.min.css';
 
@@ -7,7 +8,7 @@ export default function BlogSwiperAndSlick() {
   const blogDetailQuery = useQuery({
     queryKey: ["dataBlog1"],
     queryFn: () =>
-      fetch(`http://localhost:5000/blog`).then((res) =>
+      fetch(`${BASE_URL}/blog`).then((res) =>
         res.json()
       ),
   });

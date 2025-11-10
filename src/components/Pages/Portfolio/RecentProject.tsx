@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { BASE_URL } from 'config';
 import CardProject, { CardProps } from "components/CardProject";
 
 import "swiper/css";
@@ -16,7 +17,7 @@ export default function RecentProject({ limit }: RecentProjectProps) {
   const { data, isSuccess } = useQuery({
     queryKey: ["newData"],
     queryFn: () =>
-      fetch(`http://localhost:5000/card?_limit=${limit}`).then((res) =>
+      fetch(`${BASE_URL}/card?_limit=${limit}`).then((res) =>
         res.json()
       ),
   });
@@ -36,7 +37,7 @@ export default function RecentProject({ limit }: RecentProjectProps) {
               className="swiper-project"
               navigation={true}
               modules={[Navigation]}
-              slidesPerView={3}
+              slidesPerView={2}
               spaceBetween={32}
               effect="fade"
               breakpoints={{

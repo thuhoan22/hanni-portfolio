@@ -71,6 +71,11 @@
 
       .btn-submit {
         max-width: 200px;
+
+        @include respond-below($screen-sm) {
+          width: 100%;
+          max-width: 100%;
+        }
       }
     }
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { BASE_URL } from 'config';
 import GoogleSearchTip01 from "assets/img/img-blog-ggsearch-tip-01.png";
 import GoogleSearchTip02 from "assets/img/img-blog-ggsearch-tip-02.png";
 import GoogleSearchTip03 from "assets/img/img-blog-ggsearch-tip-03.png";
@@ -17,7 +18,7 @@ export default function BlogGoogleSearchTips() {
   const blogDetailQuery = useQuery({
     queryKey: ["dataBlog2"],
     queryFn: () =>
-      fetch(`http://localhost:5000/blog`).then((res) =>
+      fetch(`${BASE_URL}/blog`).then((res) =>
         res.json()
       ),
   });

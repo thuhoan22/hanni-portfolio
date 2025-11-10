@@ -2,6 +2,22 @@
 	font-family: 'Inter', 'Karla', sans-serif;
 }
 
+.only-pc {
+	display: block;
+	
+	@include respond-below($screen-md) {
+		display: none;
+	}
+}
+
+.only-mo {
+	display: block;
+	
+	@include respond-above($screen-md) {
+		display: none;
+	}
+}
+
 .wrap {
 	display: flex;
 
@@ -24,6 +40,11 @@
 		@include breakpoint(tablet) {
 			max-width: 100%;
 		}
+
+		@include respond-below($screen-md) {
+			padding: 0 20px;
+		}
+
 		@include breakpoint(mobile) {}
   }
 

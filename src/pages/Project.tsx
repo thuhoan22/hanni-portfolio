@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import queryString from "query-string";
 import { useDebounce } from "use-debounce";
+import { BASE_URL } from 'config';
 import CardProject, { CardProps } from "components/CardProject";
 import Pagination from "components/Pagination";
 import Customer from "components/Customer";
@@ -31,7 +32,7 @@ export default function Project() {
 
   const getData = () => {
     return fetch(
-      `http://localhost:5000/card?` + queryString.stringify(params)
+      `${BASE_URL}/card?` + queryString.stringify(params)
     ).then((res) => {
       setTotalItem(Number(res.headers.get("x-total-count") || 0));
       return res.json();
