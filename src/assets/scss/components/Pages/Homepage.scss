@@ -1,25 +1,4 @@
 .main-content {
-  height: 100vh;
-
-  @media (max-width: 1600px) {
-    padding-left: 300px;
-  }
-
-  @include respond-below($screen-lg) {
-    padding-left: 250px;
-  }
-
-  @include respond-below($screen-md) {
-    position: relative;
-    // height: 100%;
-    padding: 120px 50px;
-  }
-
-  @include respond-below($screen-sm) {
-    height: 100%;
-    padding: 60px 0;
-  }
-
   .intro {
     display: flex;
     // align-items: center;
@@ -33,7 +12,7 @@
 
     @include respond-below($screen-sm) {
       flex-direction: column;
-      padding: 40px 0 0;
+      padding: 40px 0;
     }
 
     &-box {
@@ -42,47 +21,48 @@
     }
 
     &-text {
-      width: 50%;
+      flex: 1;
+      margin-right: 120px;
+
+      @include respond-below($screen-lg) {
+        margin-right: 60px;
+      }
 
       @include respond-below($screen-md) {
         order: 2;
         width: 100%;
-      }
-
-      @include respond-below($screen-sm) {
+        margin-right: 0;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin: 30px 0 0;
       }
 
       .text {
         &-title {
-          font-size: 60px;
+          font-size: 55px;
           font-weight: 800;
           color: $primary;
-          line-height: 80px;
+          line-height: 70px;
           text-transform: capitalize;
 
-          @media (max-width: 1600px) {
-            font-size: 44px;
-            line-height: 58px;
-          }
-
-          @include respond-below($screen-lg) {
+          @include respond-between($screen-md, $screen-lg) {
             font-size: 34px;
             line-height: 48px;
           }
 
-          @include respond-below($screen-md) {
-            padding-right: 300px;
+          @include respond-between($screen-sm, $screen-md) {
             font-size: 32px;
             line-height: 42px;
+            padding-right: 300px;
+          }
+
+          @include respond-below($screen-md) {
+            order: 1;
           }
 
           @include respond-below($screen-sm) {
-            order: 1;
-            padding-right: 0;
-            font-size: 28px;
+            font-size: 26px;
+            font-weight: 600;
             line-height: 34px;
           }
         }
@@ -99,8 +79,11 @@
             margin-top: 62px;
           }
 
-          @include respond-below($screen-sm) {
+          @include respond-below($screen-md) {
             order: 2;
+          }
+
+          @include respond-below($screen-sm) {
             margin-top: 32px;
             font-size: 16px;
             line-height: 30px;
@@ -118,16 +101,12 @@
         margin-top: 40px;
         gap: 15px;
 
-        @include respond-below($screen-sm) {
+        @include respond-below($screen-md) {
           order: 4;
-          margin-top: 32px;
         }
 
         .btn {
-          min-width: 200px;
-          @include respond-below($screen-lg) {
-            min-width: 150px;
-          }
+          width: 200px;
 
           @include respond-below($screen-sm) {
             width: 100%;
@@ -140,9 +119,6 @@
 
         @include respond-below($screen-md) {
           margin-top: 70px;
-        }
-
-        @include respond-below($screen-sm) {
           order: 3;
           margin-top: 32px;
         }
@@ -150,12 +126,11 @@
     }
 
     &-image {
-      flex: 1;
       order: 1;
-      margin-left: 120px;
+      width: 430px;
 
-      @include respond-below($screen-lg) {
-        margin-left: 80px;
+      @include respond-between($screen-md, $screen-lg) {
+        width: 280px;   
       }
 
       @include respond-between($screen-sm, $screen-md) {
@@ -165,7 +140,6 @@
         overflow: hidden;
         width: 250px;
         height: 250px;
-        margin-left: 0;
         border: 1px solid $highlight-color;
         border-radius: 50%;
         &:before {
@@ -187,7 +161,6 @@
         width: 200px;
         height: 200px;
         margin: 0 auto;
-        // margin-left: 0;
         border: 1px solid $highlight-color;
         border-radius: 50%;
         &:before {
@@ -211,27 +184,16 @@
   }
 
   &.home-page {
-    &:before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 340px;
-      z-index: -1;
-      background-color: #EFFBF8;
-      content: '';
+    height: 100vh;
 
-      @media (max-width: 1600px) {
-        left: 300px;
-      }
+    @include respond-between($screen-sm, $screen-md) {
+      position: relative;
+      // height: 100%;
+      padding: 120px 50px;
+    }
 
-      @include respond-below($screen-lg) {
-        left: 250px;
-      }
-
-      @include respond-below($screen-md) {
-        left: 0;
-      }
+    @include respond-below($screen-sm) {
+      position: relative;
     }
 
     .icon-decor {
@@ -260,31 +222,6 @@
 
       @include respond-below($screen-sm) {
         display: none;
-      }
-    }
-  }
-
-  &.contact-page {
-    &:before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 340px;
-      z-index: -1;
-      background-color: #EFFBF8;
-      content: '';
-
-      @media (max-width: 1600px) {
-        left: 300px;
-      }
-
-      @include respond-below($screen-lg) {
-        left: 250px;
-      }
-
-      @include respond-below($screen-md) {
-        left: 0;
       }
     }
   }

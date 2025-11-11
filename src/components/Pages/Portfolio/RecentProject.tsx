@@ -37,12 +37,17 @@ export default function RecentProject({ limit }: RecentProjectProps) {
               className="swiper-project"
               navigation={true}
               modules={[Navigation]}
-              slidesPerView={2}
-              spaceBetween={32}
+              slidesPerView={1}
+              spaceBetween={0}
               effect="fade"
               breakpoints={{
+                375: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
                 1200: {
                   slidesPerView: 3,
+                  spaceBetween: 32,
                 },
               }}
             >

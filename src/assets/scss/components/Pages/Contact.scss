@@ -7,14 +7,14 @@
       margin-bottom: 120px;
       gap: 160px;
 
-      @include respond-below($screen-lg) {
+      @include respond-between($screen-sm, $screen-lg) {
         gap: 80px;
       }
 
       @include respond-below($screen-sm) {
         gap: 50px;
         flex-direction: column;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
       }
 
       &-left {
@@ -31,10 +31,19 @@
           font-family: 'Karla', sans-serif;
           color: $secondary;
           line-height: 32px;
+
+          @include respond-below($screen-sm) {
+            font-size: 14px;
+            line-height: 24px;
+          }
         }
 
         .contact {
           margin-top: 32px;
+
+          @include respond-below($screen-sm) {
+            margin-top: 20px;
+          }
         }
       }
 
@@ -59,6 +68,13 @@
         color: $secondary;
         line-height: 32px;
 
+        @include respond-below($screen-sm) {
+          margin-bottom: 16px;
+          padding: 10px 14px;
+          font-size: 14px;
+          line-height: 24px;
+        }
+
         &::placeholder {
           color: rgba(85, 82, 124, 0.60);
         }
@@ -72,7 +88,7 @@
       .btn-submit {
         max-width: 200px;
 
-        @include respond-below($screen-sm) {
+        @include respond-below($screen-md) {
           width: 100%;
           max-width: 100%;
         }

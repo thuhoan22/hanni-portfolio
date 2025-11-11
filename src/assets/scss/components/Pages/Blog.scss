@@ -6,12 +6,13 @@
       position: relative;
       gap: 200px;
 
-      @include respond-below($screen-lg) {
+      @include respond-between($screen-md, $screen-lg) {
         gap: 100px;
       }
 
       @include respond-below($screen-md) {
         flex-direction: column;
+        gap: 50px;
       }
     }
 
@@ -185,6 +186,10 @@
 
     .blog-content {
       margin-top: 50px;
+
+      @include respond-below($screen-md) {
+        margin-top: 20px;
+      }
 
       img {
         width: 100%;

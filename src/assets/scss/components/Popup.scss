@@ -10,6 +10,11 @@
       font-family: 'Karla', sans-serif;
       color: $secondary;
       line-height: 32px;
+
+      @include respond-below($screen-md) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
 
     .position {
@@ -19,12 +24,21 @@
       font-weight: 700;
       color: $primary;
       line-height: 32px;
+
+      @include respond-below($screen-md) {
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
   }
 
   &-body {
     margin-top: 30px;
     padding: 0;
+
+    @include respond-below($screen-md) {
+      margin-top: 20px;
+    }
 
     .text {
       position: relative;
@@ -36,6 +50,11 @@
       color: $secondary;
       line-height: 28px;
 
+      @include respond-below($screen-md) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
       &:before {
         position: absolute;
         top: 14px;
@@ -45,6 +64,10 @@
         border-radius: 50%;
         background-color: $secondary;
         content: '';
+
+        @include respond-below($screen-md) {
+          top: 9px;
+        }
       }
 
       &-key {
@@ -54,8 +77,17 @@
         color: $primary;
         line-height: 28px;
 
+        @include respond-below($screen-md) {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
         &:not(:first-child) {
           margin-top: 20px;
+
+          @include respond-below($screen-md) {
+            margin-top: 14px;
+          }
         }
       }
 
@@ -82,8 +114,12 @@
     display: block;
     max-width: 900px;
     padding: 70px 50px 50px;
-    @include respond-below($screen-md) {
+    @include respond-between($screen-sm,$screen-md) {
       padding: 70px 28px 40px;
+    }
+    @include respond-below($screen-sm) {
+      margin: 0 25px;
+      padding: 60px 20px 30px;
     }
 
     &::-webkit-scrollbar {
@@ -99,6 +135,10 @@
   .cover-image {
     position: relative;
     padding-top: 42.5%;
+
+    @include respond-below($screen-md) {
+      padding-top: 36%;
+    }
 
     img {
       position: absolute;
@@ -122,6 +162,11 @@
     color: $primary;
     line-height: 32px;
     text-align: center;
+
+    @include respond-below($screen-md) {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   .btn-close {
@@ -138,11 +183,21 @@
     border-radius: 10px;
     transition: all .3s ease;
 
+    @include respond-below($screen-md) {
+      width: 30px;
+      height: 30px;
+    }
+
     .ic {
       width: 18px;
       height: 18px;
       background: url(../../img/svg/icon-close-black.svg) no-repeat;
       background-size: 100% auto;
+
+      @include respond-below($screen-md) {
+        width: 12px;
+        height: 12px;
+      }
     }
 
     &:hover {

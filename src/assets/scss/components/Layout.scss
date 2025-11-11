@@ -1,4 +1,21 @@
 .main-content {
+  @media (max-width: 1600px) {
+    padding-left: 300px;
+  }
+
+  @include respond-between($screen-md, $screen-lg) {
+    padding-left: 250px;
+  }
+
+  @include respond-between($screen-sm, $screen-md) {
+    padding: 85px 0 0;
+  }
+
+  @include respond-below($screen-sm) {
+    height: auto;
+    padding: 60px 0 0;
+  }
+
   .section {
     padding: 100px 0;
     @include respond-below($screen-lg) {
@@ -15,6 +32,10 @@
       position: relative;
       padding-top: 115.2%;
       border-radius: 4px;
+
+      @include respond-below($screen-md) {
+        padding-top: 92%;
+      }
       
       img {
         position: absolute;
@@ -95,6 +116,10 @@
       width: max-content;
       padding: 38px 0;
       animation: none;
+
+      @include respond-below($screen-md) {
+        padding: 24px 0;
+      }
     }
 
     &-item {
@@ -103,6 +128,37 @@
       font-weight: 700;
       color: $primary;
       white-space: nowrap;
+
+      @include respond-below($screen-md) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &.home-page,
+  &.contact-page {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 340px;
+      z-index: -1;
+      background-color: #EFFBF8;
+      content: '';
+
+      @media (max-width: 1600px) {
+        left: 300px;
+      }
+
+      @include respond-below($screen-lg) {
+        left: 250px;
+      }
+
+      @include respond-below($screen-md) {
+        left: 0;
+      }
     }
   }
 }

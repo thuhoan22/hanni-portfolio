@@ -50,7 +50,9 @@ export default function Overview() {
                   <h3 className="title-main">{overviewQuery.data[0].name}</h3>
                 </div>
                 <span className="text-desc">{overviewQuery.data[0].job}</span>
-                <Link to={"/portfolio"} className="btn btn-primary">Got a project?</Link>
+                <div className="only-pc">
+                  <Link to={"/portfolio"} className="btn btn-primary">Got a project?</Link>
+                </div>
               </div>
               <div className="overview-info-right">
                 <p className="text">
@@ -111,6 +113,9 @@ export default function Overview() {
               </div>
             </>
           )}
+        </div>
+        <div className="btn-mo only-mo">
+          <Link to={"/portfolio"} className="btn btn-primary btn-got-mo">Got a project?</Link>
         </div>
         <div className="overview-basic">
           <ul className="overview-basic-list">

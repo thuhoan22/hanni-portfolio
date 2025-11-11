@@ -10,6 +10,12 @@
     color: #9492af;
     line-height: 32px;
 
+    @include respond-below($screen-md) {
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
     &:first-child {
       padding-left: 0;
     }
@@ -20,6 +26,10 @@
       position: relative;
       padding-right: 32px;
       color: #9492af;
+
+      @include respond-below($screen-md) {
+        padding-right: 26px;
+      }
 
       &:after {
         position: absolute;
@@ -32,6 +42,11 @@
         transition: .2s ease-in-out;
         transform: translateY(-50%);
         content: '';
+
+        @include respond-below($screen-md) {
+          width: 16px;
+          height: 16px;
+        }
       }
 
       .text {

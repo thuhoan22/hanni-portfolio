@@ -85,6 +85,10 @@
     margin-top: 100px;
     text-align: center;
 
+    @include respond-below($screen-md) {
+      margin-top: 50px;
+    }
+
     &-area {
       padding: 60px;
       background-color: #FFF5F6;

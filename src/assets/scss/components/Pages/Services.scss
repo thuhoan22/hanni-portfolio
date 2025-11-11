@@ -5,6 +5,11 @@
       align-items: flex-end;
       justify-content: space-between;
 
+      @include respond-below($screen-sm) {
+        position: relative;
+        padding-bottom: 30px;
+      }
+
       .contact-link {
         font-size: 18px;
         font-weight: 600;
@@ -19,6 +24,12 @@
           line-height: 20px;
         }
 
+        @include respond-below($screen-sm) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+
         &:hover {
           color: $yellow;
         }
@@ -27,6 +38,10 @@
 
     &-content {
       margin-top: 50px;
+
+      @include respond-below($screen-sm) {
+        margin-top: 10px;
+      }
 
       .image-desc {
         margin-top: 100px;
@@ -54,6 +69,7 @@
 
       @include respond-below($screen-lg) {
         width: calc(50% - 30px);
+        padding: 22px;
       }
 
       @include respond-below($screen-sm) {
@@ -113,6 +129,12 @@
         font-weight: 500;
         color: $primary;
         line-height: 32px;
+
+        @include respond-below($screen-md) {
+          margin-top: 16px;
+          font-size: 14px;
+          line-height: 24px;
+        }
 
         .icon-arrow {
           position: absolute;
