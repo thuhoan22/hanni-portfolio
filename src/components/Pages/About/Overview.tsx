@@ -56,7 +56,7 @@ export default function Overview() {
               </div>
               <div className="overview-info-right">
                 <p className="text">
-                  Hello there! My name is <em>Hanni Nguyen</em>. I am a front-end
+                  Hello there! My name is <em>Hanni Nguyen</em>.<br/> I am a front-end
                   developer, and I'm very passionate and dedicated to my work.
                   Besides I have a passion for web design and love to create for web
                   and mobile devices.

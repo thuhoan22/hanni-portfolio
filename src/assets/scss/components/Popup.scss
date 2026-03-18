@@ -118,8 +118,8 @@
       padding: 70px 28px 40px;
     }
     @include respond-below($screen-sm) {
-      margin: 0 25px;
-      padding: 60px 20px 30px;
+      margin: 0 15px;
+      padding: 60px 16px 30px;
     }
 
     &::-webkit-scrollbar {
@@ -138,6 +138,10 @@
 
     @include respond-below($screen-md) {
       padding-top: 36%;
+    }
+
+    @include respond-below($screen-sm) {
+      padding-top: 48%;
     }
 
     img {

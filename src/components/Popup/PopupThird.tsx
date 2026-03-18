@@ -37,7 +37,7 @@ function PopupThird({ isShow = false, onClose }: PopupThirdProps) {
         <p className="text">Working with the database, get data from the database to the website.</p>
         <p className="text">Working with CMS admin page.</p>
         <strong className="text-key">Project name:</strong>
-        <p className="text"><a href="http://company.o2tech.vn/" className="text-link">O2 Government Platform:</a> O2 Task/ O2 Calendar/ O2 Wiki/ O2 Meet.</p>
+        <p className="text"><a href="http://company.o2tech.vn/" className="text-link">O2 Internal Platform:</a> O2 Task/ O2 Calendar/ O2 Wiki/ O2 Meet.</p>
         <p className="text"><a href="https://qqlkdxd.aita.gov.vn/" className="text-link">Petroleum management of the Ministry of Industry and Trade.</a></p>
         <p className="text">Electrical Information page of the National monitoring center on E-Government.</p>
         <p className="text">Information security level management.</p>
