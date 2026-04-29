@@ -43,12 +43,13 @@ function PopupSecond({ isShow = false, onClose }: PopupSecondProps) {
         <p className="text">Kakao game.</p>
         <p className="text">Mobile web: Kookmin University.</p>
         <p className="text">LG life.</p>
-        <p className="text">
+        <p className="text">NHN AD, NHN(recruit), and many other projects.</p>
+        {/* <p className="text">
           NHN:
           <a href="http://www.nhnglobal.com/usa/index.nhn" className="text-link">http://www.nhnglobal.com/usa/index.nhn</a>
           <a href="http://www.nhnservice.com/ns/index.nhn" className="text-link">http://www.nhnservice.com/ns/index.nhn</a>
         </p>
-        <p className="text">NHN AD, NHN(recruit), and many other projects.</p>
+        <p className="text">NHN AD, NHN(recruit), and many other projects.</p> */}
       </DialogContent>
       <button onClick={onClose} aria-label="close" className="btn-close">
         <span className="ic"></span>
