@@ -77,11 +77,11 @@ export default function MyContact() {
             </button>
           </div>
         </div>
-        <div className="section-content">
+        {/* <div className="section-content">
           <div className="image-desc">
             <img src={ImgMap} alt="" />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
