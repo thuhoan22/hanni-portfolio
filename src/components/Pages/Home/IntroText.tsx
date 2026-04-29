@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { BASE_URL } from 'config';
+import { getCollection, ProfileRecord } from "services/localDb";
 
 export default function IntroText() {
   const informationQuery = useQuery({
     queryKey: ["dataContact"],
-    queryFn: () =>
-      fetch(`${BASE_URL}/profile`).then((res) =>
-        res.json()
-      ),
+    queryFn: () => Promise.resolve(getCollection<ProfileRecord>("profile").data),
   });
 
   let experienceYears = null;

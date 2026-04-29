@@ -10,8 +10,8 @@ export default function MyServices() {
             <span className="title-sub">- Services</span>
             <h3 className="title-main">My Services</h3>
           </div>
-          <Link to={"mailto:hannin.dev@gmail.com"} className="contact-link">
-            hannin.dev@gmail.com
+          <Link to={"mailto:thuhoan2208@gmail.com"} className="contact-link">
+            thuhoan2208@gmail.com
           </Link>
         </div>
         <div className="section-content">

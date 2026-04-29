@@ -1,16 +1,13 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { BASE_URL } from 'config';
 import Highlight from 'react-highlight';
 import 'highlight.js/styles/atom-one-light.min.css';
+import { BlogRecord, getCollection } from "services/localDb";
 
 export default function BlogSwiperAndSlick() {
   const blogDetailQuery = useQuery({
     queryKey: ["dataBlog1"],
-    queryFn: () =>
-      fetch(`${BASE_URL}/blog`).then((res) =>
-        res.json()
-      ),
+    queryFn: () => Promise.resolve(getCollection<BlogRecord>("blog").data),
   });
 
   return (

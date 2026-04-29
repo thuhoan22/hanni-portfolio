@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { BASE_URL } from 'config';
 import GoogleSearchTip01 from "assets/img/img-blog-ggsearch-tip-01.png";
 import GoogleSearchTip02 from "assets/img/img-blog-ggsearch-tip-02.png";
 import GoogleSearchTip03 from "assets/img/img-blog-ggsearch-tip-03.png";
@@ -13,14 +12,12 @@ import GoogleSearchTip09 from "assets/img/img-blog-ggsearch-tip-09.png";
 import GoogleSearchTip10 from "assets/img/img-blog-ggsearch-tip-10.png";
 import GoogleSearchTip11 from "assets/img/img-blog-ggsearch-tip-11.png";
 import GoogleSearchTip12 from "assets/img/img-blog-ggsearch-tip-12.png";
+import { BlogRecord, getCollection } from "services/localDb";
 
 export default function BlogGoogleSearchTips() {
   const blogDetailQuery = useQuery({
     queryKey: ["dataBlog2"],
-    queryFn: () =>
-      fetch(`${BASE_URL}/blog`).then((res) =>
-        res.json()
-      ),
+    queryFn: () => Promise.resolve(getCollection<BlogRecord>("blog").data),
   });
 
   return (

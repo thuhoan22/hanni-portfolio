@@ -1,12 +1,12 @@
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import queryString from "query-string";
 import { useDebounce } from "use-debounce";
-import { BASE_URL } from 'config';
 import CardProject, { CardProps } from "components/CardProject";
 import Pagination from "components/Pagination";
 import Customer from "components/Customer";
+import { getCollection } from "services/localDb";
 
 const limit = 9;
 export interface SelectType {
@@ -31,12 +31,12 @@ export default function Project() {
   );
 
   const getData = () => {
-    return fetch(
-      `${BASE_URL}/card?` + queryString.stringify(params)
-    ).then((res) => {
-      setTotalItem(Number(res.headers.get("x-total-count") || 0));
-      return res.json();
+    const { data, total } = getCollection<CardProps>("card", {
+      limit: params._limit,
+      page: params._page,
     });
+    setTotalItem(total);
+    return Promise.resolve(data);
   };
   const [debouncedParams] = useDebounce(params, 300);
   const { data, isSuccess } = useQuery({

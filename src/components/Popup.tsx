@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 import Modal from 'react-bootstrap/Modal';
-import { BASE_URL } from 'config';
 
 // export interface PopupProps {
 //   titleHead: string;
@@ -15,10 +14,7 @@ import { BASE_URL } from 'config';
 export default function Popup() {
   const { data, isSuccess } = useQuery({
     queryKey: ["dataExperience"],
-    queryFn: () =>
-      fetch(`${BASE_URL}/experience`).then((res) =>
-        res.json()
-      ),
+    queryFn: () => Promise.resolve([]),
   });
 
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useWindowSize } from "hook/useWindowSize";
-import { BASE_URL } from 'config';
+import { getCollection, ProfileRecord } from "services/localDb";
 import IconDecorSidebar from "components/IconDecorSidebar";
 import IconFacebook from "assets/img/svg/icon-facebook.svg";
 import IconInstagram from "assets/img/svg/icon-instagram.svg";
@@ -19,10 +19,7 @@ export default function SideBar() {
 
   const snsQuery = useQuery({
     queryKey: ["dataContact"],
-    queryFn: () =>
-      fetch(`${BASE_URL}/profile`).then((res) =>
-        res.json()
-      ),
+    queryFn: () => Promise.resolve(getCollection<ProfileRecord>("profile").data),
   });
 
   const closeMenu = () => setIsOpen(false);

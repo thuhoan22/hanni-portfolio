@@ -1,14 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
-import { BASE_URL } from 'config';
 import Experience from "./Experience";
+import { getCollection, ProfileRecord } from "services/localDb";
 
 export default function EducationExperience() {
   const moreInformationQuery = useQuery({
     queryKey: ["dataContact"],
-    queryFn: () =>
-      fetch(`${BASE_URL}/profile`).then((res) =>
-        res.json()
-      ),
+    queryFn: () => Promise.resolve(getCollection<ProfileRecord>("profile").data),
   });
 
   return (
