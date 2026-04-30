@@ -184,7 +184,9 @@
   }
 
   &.home-page {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
 
     @include respond-between($screen-sm, $screen-md) {
       position: relative;
@@ -194,7 +196,6 @@
 
     @include respond-below($screen-sm) {
       position: relative;
-      height: 100%;
     }
 
     .icon-decor {
