@@ -122,6 +122,19 @@
     },
     {
       "id": 10,
+      "thumb": "/images/img-project-13.jpg",
+      "name": "Wedding invitation",
+      "website": "https://thuhoan22.github.io/animation/Wedding-landing",
+      "client": "",
+      "category": "Event",
+      "date": "Nov 10, 2024",
+      "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "imgage1": "/images/img-detail-wedding-01.jpg",
+      "imgage2": "/images/img-detail-wedding-02.jpg"
+    },
+    {
+      "id": 11,
       "thumb": "/images/img-project-02.jpg",
       "name": "Restaurant",
       "website": "spaghettibox.food",
@@ -135,19 +148,6 @@
       "imgage2": "/images/img-detail-10.jpg",
       "imgage3": "/images/img-detail-11.jpg",
       "imgage4": "/images/img-detail-12.jpg"
-    },
-    {
-      "id": 11,
-      "thumb": "/images/img-project-13.jpg",
-      "name": "Wedding invitation",
-      "website": "https://thuhoan22.github.io/animation/Wedding-landing",
-      "client": "",
-      "category": "Event",
-      "date": "Nov 10, 2024",
-      "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "imgage1": "/images/img-detail-wedding-01.jpg",
-      "imgage2": "/images/img-detail-wedding-02.jpg"
     },
     {
       "id": 12,
