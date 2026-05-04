@@ -46,7 +46,7 @@ function PopupFourth({ isShow = false, onClose }: PopupFourthProps) {
         <p className="text">NC Foundation</p>
 
         {/* <p className="text">Ignite: <a href="https://cpo.kia.com/" className="text-link">https://cpo.kia.com/</a></p>
-        <p className="text">Kia/Hyundai</p>
+        <p className="text">Kia/Hyundai</p>https://cpo.kia.com/
         <p className="text">Kia PBV: <a href="https://www.kia.com/jp/ja/lineup/pv5-passenger" className="text-link">https://www.kia.com/jp/ja/lineup/pv5-passenger</a></p>
         <p className="text">KARNARK game (MMORPG)</p>
         <p className="text">Amore Pacific: <a href="https://www.apgroup.com/int/ko/" className="text-link">https://www.apgroup.com/int/ko/</a></p>

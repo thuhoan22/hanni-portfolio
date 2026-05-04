@@ -45,6 +45,10 @@
         color: $secondary;
         transition: color .2s ease;
 
+        @include respond-below($screen-md) {
+          font-size: 16px;
+        }
+
         &:hover {
           color: $primary;
         }
@@ -95,6 +99,11 @@
         font-family: 'Karla', sans-serif;
         color: $secondary;
         line-height: 32px;
+
+        @include respond-below($screen-md) {
+          font-size: 16px;
+          line-height: 26px;
+        }
 
         &:not(:first-child) {
           margin-top: 32px;
@@ -208,6 +217,10 @@
 
             @include respond-below($screen-lg) {
               width: calc((100% - 20px) / 2);
+            }
+
+            @include respond-below($screen-sm) {
+              width: 100%;
             }
 
             &:first-child {

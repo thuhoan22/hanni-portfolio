@@ -18,6 +18,34 @@
     },
     {
       "id": 2,
+      "thumb": "/images/img-project-11.jpg",
+      "name": "Bloom Beauty",
+      "website": "https://cosmetic-bloom-beauty.vercel.app",
+      "client": "Bloom Beauty",
+      "category": "Cosmetic",
+      "date": "Dec 09, 2025",
+      "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "imgage1": "/images/img-detail-bloom-01.jpg",
+      "imgage2": "/images/img-detail-bloom-02.jpg",
+      "imgage3": "/images/img-detail-bloom-03.jpg",
+      "imgage4": "/images/img-detail-bloom-04.jpg"
+    },
+    {
+      "id": 3,
+      "thumb": "/images/img-project-05.jpg",
+      "name": "NFTHub",
+      "website": "https://thuhoan22.github.io/animation/NFTHub",
+      "client": "NTFHub",
+      "category": "NTF",
+      "date": "Apr 26, 2024",
+      "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "imgage1": "/images/img-detail-ntfhub-01.jpg",
+      "imgage2": "/images/img-detail-ntfhub-02.jpg"
+    },
+    {
+      "id": 4,
       "thumb": "/images/img-project-04.jpg",
       "name": "Jadoo",
       "website": "https://thuhoan22.github.io/landing-jadoo/homepage.html",
@@ -27,46 +55,24 @@
       "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "desc3": "",
-      "imgage1": "/images/img-detail-17.jpg",
-      "imgage2": "/images/img-detail-18.jpg",
-      "imgage3": "/images/img-detail-19.jpg",
-      "imgage4": "/images/img-detail-20.jpg"
-    },
-    {
-      "id": 3,
-      "thumb": "/images/img-project-05.jpg",
-      "name": "NFTHub",
-      "website": "https://thuhoan22.github.io/animation/NFTHub",
-      "client": "",
-      "category": "NTF",
-      "date": "Apr 26, 2024",
-      "desc": ""
-    },
-    {
-      "id": 4,
-      "thumb": "/images/img-project-11.jpg",
-      "name": "Bloom Beauty",
-      "website": "https://cosmetic-bloom-beauty.vercel.app",
-      "client": "Bloom Beauty",
-      "category": "Cosmetic",
-      "date": "May 16, 2024",
-      "desc": ""
+      "imgage1": "/images/img-detail-jadoo-01.jpg",
+      "imgage2": "/images/img-detail-jadoo-02.jpg",
+      "imgage3": "/images/img-detail-jadoo-03.jpg",
+      "imgage4": "/images/img-detail-jadoo-04.jpg"
     },
     {
       "id": 5,
       "thumb": "/images/img-project-03.jpg",
-      "name": "Interior Design Ltd.",
-      "website": "https://thuhoan22.github.io/Animation/Interior-landing",
+      "name": "Interior Design",
+      "website": "https://thuhoan22.github.io/animation/Interior-landing/",
       "client": "TH House",
-      "category": "Modalbox",
-      "date": "July 08, 2024",
+      "category": "ecommerce",
+      "date": "July 08, 2023",
       "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "desc3": "",
-      "imgage1": "/images/img-detail-13.jpg",
-      "imgage2": "/images/img-detail-14.jpg",
-      "imgage3": "/images/img-detail-15.jpg",
-      "imgage4": "/images/img-detail-16.jpg"
+      "imgage1": "/images/img-detail-interior-01.jpg",
+      "imgage2": "/images/img-detail-interior-02.jpg"
     },
     {
       "id": 6,
@@ -74,53 +80,44 @@
       "name": "Cheo Beo Studio",
       "website": "cheobeo.studio.vn",
       "client": "Cheo Beo Studio",
-      "category": "ecommerce",
+      "category": "shopify",
       "date": "Feb 02, 2021",
       "desc1": "Cheo Beo brings the most complete products, good materials, fashionable and carries many meanings. Cheo Beo website is designed to bring comfort to users, accessing product information at first sight.",
       "desc2": "Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they phase when they will represent the target product. Building mockups strikes the ideal balance ease of modification.",
       "desc3": "",
-      "imgage1": "/images/img-detail-01.jpg",
-      "imgage2": "/images/img-detail-02.jpg",
-      "imgage3": "/images/img-detail-03.jpg",
-      "imgage4": "/images/img-detail-04.jpg"
-    },
-    {
-      "id": 7,
-      "thumb": "/images/img-project-07.jpg",
-      "name": "Hyundai",
-      "website": "hyundai.ko",
-      "client": "",
-      "category": "vihecle",
-      "date": "Sep 22, 2023",
-      "desc": ""
-    },
-    {
-      "id": 8,
-      "thumb": "/images/img-project-08.jpg",
-      "name": "Kia",
-      "website": "https://cpo.kia.com/",
-      "client": "",
-      "category": "vihecle",
-      "date": "Mar 19, 2023",
-      "desc": ""
+      "imgage1": "/images/img-detail-cheobeo-01.png",
+      "imgage2": "/images/img-detail-cheobeo-03.jpg",
+      "imgage3": "/images/img-detail-cheobeo-02.jpg",
+      "imgage4": "/images/img-detail-cheobeo-04.jpg"
     },
     {
       "id": 9,
       "thumb": "/images/img-project-09.jpg",
       "name": "MeTime",
-      "client": "",
+      "client": "MeTime",
       "category": "Mobile, App",
       "date": "Jan 05, 2024",
-      "desc": ""
+      "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "desc3": "",
+      "imgage1": "/images/img-detail-metime-01.png",
+      "imgage2": "/images/img-detail-metime-02.png",
+      "imgage3": "/images/img-detail-metime-03.png",
+      "imgage4": "/images/img-detail-metime-04.png"
     },
     {
       "id": 10,
       "thumb": "/images/img-project-10.jpg",
-      "name": "Netflix",
+      "name": "VitanEco",
       "client": "",
-      "category": "Movie",
+      "category": "ecosystem",
       "date": "Jun 14, 2021",
-      "desc": ""
+      "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "desc3": "",
+      "imgage1": "/images/img-detail-vitan-03.jpg",
+      "imgage3": "/images/img-detail-vitan-01.jpg",
+      "imgage4": "/images/img-detail-vitan-02.jpg"
     },
     {
       "id": 11,
@@ -139,15 +136,6 @@
       "imgage4": "/images/img-detail-12.jpg"
     },
     {
-      "id": 12,
-      "thumb": "/images/img-project-12.jpg",
-      "name": "Neauthy",
-      "client": "",
-      "category": "Cosmetic",
-      "date": "Feb 26, 2022",
-      "desc": ""
-    },
-    {
       "id": 13,
       "thumb": "/images/img-project-13.jpg",
       "name": "Wedding invitation",
@@ -155,15 +143,19 @@
       "client": "",
       "category": "Event",
       "date": "Nov 10, 2024",
-      "desc": ""
+      "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "imgage1": "/images/img-detail-wedding-01.jpg",
+      "imgage2": "/images/img-detail-wedding-02.jpg"
     },
     {
-      "id": 14,
-      "thumb": "/images/img-project-14.jpg",
-      "name": "Food & Beverage",
+      "id": 7,
+      "thumb": "/images/img-project-07.jpg",
+      "name": "Hyundai, Kia",
+      "website": "hyundai.ko",
       "client": "",
-      "category": "F&B",
-      "date": "Jan 05, 2024",
+      "category": "vihecle",
+      "date": "Sep 22, 2023",
       "desc": ""
     }
   ],
