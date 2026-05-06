@@ -66,13 +66,13 @@ export default function SideBar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/services"} className="item-link">
-                    Services
+                  <NavLink to={"/portfolio"} className="item-link">
+                    Portfolio
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/portfolio"} className="item-link">
-                    Portfolio
+                  <NavLink to={"/services"} className="item-link">
+                    Services
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -141,13 +141,13 @@ export default function SideBar() {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={"/services"} className="item-link" onClick={closeMenu}>
-                      Services
+                    <NavLink to={"/portfolio"} className="item-link" onClick={closeMenu}>
+                      Portfolio
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={"/portfolio"} className="item-link" onClick={closeMenu}>
-                      Portfolio
+                    <NavLink to={"/services"} className="item-link" onClick={closeMenu}>
+                      Services
                     </NavLink>
                   </li>
                   <li className="nav-item">

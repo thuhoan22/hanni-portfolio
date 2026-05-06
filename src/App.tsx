@@ -77,7 +77,3 @@ const App = () => {
 };
 
 export default App;
-
-// https://ivo-culic.medium.com/13-useful-google-search-tips-for-web-developers-bca00ec13f63
-// https://viblo.asia/p/cac-trick-search-google-ma-developer-nen-biet-Ljy5VQv9lra
-// https://www.theguardian.com/technology/2016/jan/15/how-to-use-search-like-a-pro-10-tips-and-tricks-for-google-and-beyond

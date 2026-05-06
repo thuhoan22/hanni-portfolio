@@ -16,25 +16,25 @@ const blogList = [
   {
     id: 3,
     time: 'Jan 01, 2023',
-    title: 'Skills and tools for efficient web design',
+    title: 'Learn about Hook in Reactjs',
     url: '/blog-detail/3'
   },
   {
     id: 4,
     time: 'Dec 09, 2022',
-    title: 'How to use python for web scraping',
+    title: 'Optimizing web performance for better user experience',
     url: ''
   },
   {
     id: 5,
     time: 'April 12, 2023',
-    title: 'Best wireframe tools for web designers',
+    title: 'Best practices for clean and maintainable Front-End code',
     url: ''
   },
   {
     id: 6,
     time: 'May 25, 2022',
-    title: 'Learn about Hook in Reactjs',
+    title: 'Responsive Design: Creating seamless multi-device experiences',
     url: ''
   }
 ]

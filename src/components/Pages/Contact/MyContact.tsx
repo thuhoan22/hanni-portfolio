@@ -51,7 +51,7 @@ export default function MyContact() {
               </div>
             </div>
           </div>
-          <div className="section-head-right">
+          {/* <div className="section-head-right">
             <input
               type="text"
               id="name"
@@ -75,7 +75,7 @@ export default function MyContact() {
             <button type="button" className="btn btn-submit btn-primary">
               Submit now
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="section-content">
           <div className="image-desc">

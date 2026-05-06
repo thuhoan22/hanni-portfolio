@@ -52,15 +52,10 @@ export default function Overview() {
               </div>
               <div className="overview-info-right">
                 <p className="text">
-                  Hello there! My name is <em>Hanni Nguyen</em>.<br/> I am a front-end
-                  developer, and I'm very passionate and dedicated to my work.
-                  Besides I have a passion for web design and love to create for web
-                  and mobile devices.
+                  Hello there! My name is <em>Hanni Nguyen</em>.<br/> I am a Front-End Developer with a strong passion for building intuitive and engaging user interfaces. I'm dedicated to my work and take pride in creating seamless experiences across both web and mobile platforms.
                 </p>
                 <p className="text">
-                  With ~{getExperienceYears()} years of experience, I have acquired the skills and
-                  knowledge necessary to make a project a success. I enjoy every
-                  step of the process, from discussion and collaboration.
+                  With ~{getExperienceYears()} years of experience, I have developed a solid foundation in front-end technologies and a deep understanding of user-centered design. I enjoy every stage of the development process, from collaborating with designers and backend teams to implementing responsive, high-quality interfaces that deliver real value.
                 </p>
                 <div className="info-basic">
                   <table className="table-info">

@@ -144,10 +144,7 @@
       "desc1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "desc2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "desc3": "",
-      "imgage1": "/images/img-detail-09.jpg",
-      "imgage2": "/images/img-detail-10.jpg",
-      "imgage3": "/images/img-detail-11.jpg",
-      "imgage4": "/images/img-detail-12.jpg"
+      "imgage1": "/images/img-detail-09.jpg"
     },
     {
       "id": 12,
@@ -184,24 +181,24 @@
   "client": [
     {
       "id": 1,
-      "avt": "/images/img-avt-client-01.png",
-      "name": "Go Eun Kim",
-      "position": "Senior Designer at Behance",
-      "review": "Really the Code Quality, Customer Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends."
+      "avt": "/images/img-avt-client-01.jpg",
+      "name": "Nguyen Thanh Cong",
+      "position": "Freelancer Developer",
+      "review": "The front-end work is polished, with smooth UI and accurate implementation of the design. Fast and reliable."
     },
     {
       "id": 2,
-      "avt": "/images/img-avt-client-02.png",
-      "name": "Hyunbum Koo",
-      "position": "Director at NC Foundation",
-      "review": "With a vision to promote perfectiony with a more systematic and sustainable approach. They focus on creating qualitative values for a better project."
+      "avt": "/images/img-avt-client-02.jpg",
+      "name": "Harry Pham",
+      "position": "Lab Leader at DTS",
+      "review": "Great collaboration with the backend team, handling API integration cleanly, efficiently, and with strong attention to detail."
     },
     {
       "id": 3,
-      "avt": "/images/img-avt-client-03.png",
-      "name": "Lion Mark",
-      "position": "Freelancer Developer",
-      "review": "Based on innovative research and development that delivers the best and the first products to the clients as well as good take care and cutting-edge technology."
+      "avt": "/images/img-avt-client-03.jpg",
+      "name": "Dam Thi Thanh Huyen",
+      "position": "Team Leader at GDX",
+      "review": "Proactively suggests UX improvements and thoughtful enhancements, making the product more intuitive and user-friendly."
     }
   ],
   "blog": [
@@ -219,25 +216,25 @@
     },
     {
       "id": 3,
-      "title": "Skills and tools for efficient web design",
+      "title": "Learn about Hook in Reactjs",
       "time": "Jan 01, 2023",
       "url": "/blog-detail/3"
     },
     {
       "id": 4,
-      "title": "How to use python for web scraping",
+      "title": "Optimizing web performance for better user experience",
       "time": "Dec 09, 2022",
       "url": ""
     },
     {
       "id": 5,
-      "title": "Best wireframe tools for web designers",
+      "title": "Best practices for clean and maintainable Front-End code",
       "time": "April 12, 2023",
       "url": ""
     },
     {
-      "id": 1,
-      "title": "Learn about Hook in Reactjs",
+      "id": 6,
+      "title": "Responsive Design: Creating seamless multi-device experiences",
       "time": "May 25, 2022",
       "url": ""
     }
