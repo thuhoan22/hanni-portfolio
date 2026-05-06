@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import Customer from "components/Customer";
+// import Customer from "components/Customer";
 import Client, { ClientProps } from "components/Client";
 import { getCollection } from "services/localDb";
 
