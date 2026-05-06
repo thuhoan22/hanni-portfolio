@@ -26,7 +26,7 @@ export default function CustomerClient() {
         </div>
       </div>
       <div className="section-content">
-        <Customer direction="left" speed={12}>
+        {/* <Customer direction="left" speed={12}>
           <li className="divider-item">Dorfus</li>
           <li className="divider-item">Martino</li>
           <li className="divider-item">Hivelab Vina</li>
@@ -34,7 +34,7 @@ export default function CustomerClient() {
           <li className="divider-item">Fortna</li>
           <li className="divider-item">Mic</li>
           <li className="divider-item">Paperz</li>
-        </Customer>
+        </Customer> */}
         <div className="client-review">
           <div className="inner">
             <div className="client-review-area">
