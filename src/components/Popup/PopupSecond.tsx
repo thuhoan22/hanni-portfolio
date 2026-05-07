@@ -38,11 +38,11 @@ function PopupSecond({ isShow = false, onClose }: PopupSecondProps) {
         <p className="text">Maintenance of old websites.</p>
         <p className="text">Managing work with Gitlab/Github.</p>
         <strong className="text-key">Project name:</strong>
-        <p className="text">Hangame Promotion: <a href="https://www.hangame.com/" className="text-link">https://www.hangame.com/</a> (and many other projects).</p>
-        <p className="text">Payco Promotion.</p>
+        {/* <p className="text">Hangame Promotion: <a href="https://www.hangame.com/" className="text-link">https://www.hangame.com/</a> (and many other projects).</p> */}
+        <p className="text">Hangame and Payco Promotion.</p>
         <p className="text">Kakao game.</p>
-        <p className="text">Mobile web: Kookmin University.</p>
-        <p className="text">LG life.</p>
+        <p className="text">Kookmin University (mobile)</p>
+        <p className="text">LG life / Samsung life</p>
         <p className="text">NHN AD, NHN(recruit), and many other projects.</p>
         {/* <p className="text">
           NHN:

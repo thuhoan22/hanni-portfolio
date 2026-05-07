@@ -194,6 +194,10 @@
       img {
         width: 60%;
         object-fit: cover;
+
+        @include respond-below($screen-md) {
+          width: 100%;
+        }
       }
     }
   }

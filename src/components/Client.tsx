@@ -11,13 +11,15 @@ export default function Client({ id, avt, name, position, review }: ClientProps)
     <div className="client-info">
       <p className="text-review">{review}</p>
       <div className="personal-info">
-        <div className="avata-name">
+        <div className="box-info">
           <span className="avata">
             <img src={avt} alt="" />
           </span>
-          <strong className="name">{name}</strong>
+          <div className="info">
+            <strong className="name">{name}</strong>
+            <span className="position">{position}</span>
+          </div>
         </div>
-        <span className="position">{position}</span>
       </div>
     </div>
   );

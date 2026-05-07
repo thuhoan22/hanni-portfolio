@@ -29,9 +29,7 @@ export default function IntroText() {
       </p>
       <div className="btn-group">
         <Link to={"/portfolio"} className="btn btn-primary">Got a project?</Link>
-        <button type="button" className="btn btn-secondary">
-          Let’s talk
-        </button>
+        <Link to={"/contact"} className="btn btn-secondary">Let’s talk</Link>
       </div>
       <div className="contact">
       {informationQuery.isSuccess && (

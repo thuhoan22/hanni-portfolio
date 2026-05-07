@@ -10,6 +10,10 @@
       display: flex;
       flex-wrap: wrap;
       gap: 32px;
+
+      @include respond-below($screen-md) {
+        gap: 24px;
+      }
     }
 
     &-item {
@@ -23,31 +27,37 @@
 
   .pagination {
     margin-top: 64px;
+
+    @include respond-below($screen-md) {
+      padding-bottom: 40px;
+    }
   }
 
   .divider {
-    margin-top: 32px;
+    margin: 32px 0;
   }
 
   &-detail {
     .website-link {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
       margin-top: 16px;
       font-size: 18px;
       font-weight: 400;
       font-family: 'Karla', sans-serif;
       color: $secondary;
       line-height: 24px;
+      gap: 5px;
 
-      &>a {
-        margin-left: 4px;
+      @include respond-below($screen-md) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &>a { 
         font-style: italic;
         color: $secondary;
         transition: color .2s ease;
-
-        @include respond-below($screen-md) {
-          font-size: 16px;
-        }
 
         &:hover {
           color: $primary;

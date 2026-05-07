@@ -31,7 +31,7 @@ export default function ProjectDetail() {
                   </ul>
                   <h3 className="title-main">{projectDetail.name}</h3>
                   <span className="website-link">
-                    Website: 
+                    <span>Website:</span>
                     <Link to={`${projectDetail.website}`} target="_blank">
                       {projectDetail.website}
                     </Link>

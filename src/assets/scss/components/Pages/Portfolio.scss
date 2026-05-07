@@ -159,7 +159,7 @@
         margin: 32px 0 27px;
       }
 
-      .avata-name {
+      .box-info {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -176,8 +176,16 @@
           }
         }
 
-        .name {
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 6px;
           margin-left: 14px;
+        }
+
+        .name {
           font-size: 22px;
           font-weight: 500;
           color: $primary;
@@ -194,20 +202,19 @@
             line-height: 20px;
           }
         }
-      }
 
-      .position {
-        margin-top: 10px;
-        font-size: 18px;
-        font-weight: 400;
-        font-family: 'Karla', sans-serif;
-        color: $secondary;
-        line-height: 32px;
-        text-align: center;
-
-        @include respond-below($screen-md) {
-          font-size: 14px;
-          line-height: 20px;
+        .position {
+          font-size: 17px;
+          font-weight: 400;
+          font-family: 'Karla', sans-serif;
+          color: $secondary;
+          line-height: 22px;
+          text-align: center;
+  
+          @include respond-below($screen-md) {
+            font-size: 14px;
+            line-height: 18px;
+          }
         }
       }
     }
