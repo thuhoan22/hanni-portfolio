@@ -42,10 +42,12 @@ function PopupFourth({ isShow = false, onClose }: PopupFourthProps) {
         <p className="text">Manage source code using GitLab.</p>
         <strong className="text-key">Project name:</strong>
         <p className="text">Kia/Hyundai</p>
-        <p className="text">KARNARK game (MMORPG)</p>
+        <p className="text">Oliveyoung</p>
+        <p className="text">Dong-A Pharm</p>
+        <p className="text">Riotgames / Karnark game (MMORPG)</p>
         <p className="text">Amore Pacific</p>
         <p className="text">NC Foundation</p>
-        <p className="text"> And many other projects~</p>
+        <p className="text">And many other projects~</p>
 
         {/* <p className="text">Ignite: <a href="https://cpo.kia.com/" className="text-link">https://cpo.kia.com/</a></p>
         <p className="text">Kia/Hyundai</p>https://cpo.kia.com/

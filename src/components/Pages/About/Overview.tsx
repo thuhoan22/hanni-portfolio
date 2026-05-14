@@ -112,7 +112,7 @@ export default function Overview() {
           <ul className="overview-basic-list">
             <li className="overview-basic-item">
               <span className="shutter"></span>
-              <span className="value">5+</span>
+              <span className="value">{getExperienceYears()}+</span>
               <span className="key">Years of experience</span>
             </li>
             <li className="overview-basic-item">
@@ -122,7 +122,7 @@ export default function Overview() {
             </li>
             <li className="overview-basic-item">
               <span className="shutter"></span>
-              <span className="value">30+</span>
+              <span className="value">20+</span>
               <span className="key">Happy clients</span>
             </li>
           </ul>
